@@ -72,6 +72,7 @@ class HtmlHelper {
  */
 	public function image($url, $attr = array()) {
 		$_options = array(
+            'url'    => false,
 			'parent' => false
 		);
 		$attr += $_options;
@@ -81,6 +82,7 @@ class HtmlHelper {
 			return null;
 		}
 		$path = $options['parent'] ? $this->theme->info('base_url') : $this->theme->info('url');
+        if ( $options['url'] ) return $path.'/img/'.$url;
 		return '<img src="'.$path.'/img/'.$url.'"'.$this->parseAttributes($attr).'/>';
 	}
 

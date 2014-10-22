@@ -32,7 +32,7 @@
 #content article.first.message-series {
 	padding: 0 0 20px 0;
 
-	border-bottom: 1px dotted #747474;
+	/*border-bottom: 1px dotted #747474;*/
 }
 
 #content article.first.message-series time {

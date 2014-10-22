@@ -237,7 +237,7 @@ nav.submenu a {
 }
 
 .home #frontpage-sidebar aside {
-	width: 49%;
+	/*width: 49%;*/
 }
 
 .home #frontpage-sidebar aside:nth-child(odd) {
