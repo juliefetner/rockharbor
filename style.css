@@ -42,6 +42,10 @@ body {
 
 	text-align: left;
 }
+.wrapper {
+    box-sizing: border-box;
+    padding: 0 30px;
+}
 
 /*= Generic styles
 -----------------------------------------*/
@@ -304,15 +308,26 @@ th {
 
 /*= Global navigation
 -----------------------------------------*/
+.campus-menu {
+    margin-top: 8px;
+    display: inline-block;
+}
+.campus-name {
+    display: table;    
+    margin-left: 45px;
+    margin-top: -17px;
+    font-size: 1.3em;
+}
+
 .global-navigation {
 	position: relative;
 	padding-right: 10px;
 	margin-bottom: 10px;
-	height: 51px;
+	height: 40px;
 
 	background: #f2f2f2;
 
-	box-shadow: 0px 0px 3px 0px #888888;
+	/*box-shadow: 0px 0px 3px 0px #888888;*/
 }
 
 .global-navigation h1 {
@@ -401,7 +416,7 @@ th {
 .global-navigation nav li.search,
 .global-navigation nav li.campuses
 {
-	line-height: 51px;
+	line-height: 40px;
 }
 
 .global-navigation nav ul li ul {
@@ -448,6 +463,9 @@ th {
 
 .global-navigation #searchform {
 	margin-left: 10px;
+    float: left;
+    /*display: inline-block;*/
+    /*display: none;*/
 }
 
 .global-navigation #searchform input {
@@ -457,12 +475,12 @@ th {
 	font-size: 1.1em; /*= 11px */
 	text-align: right;
 
-	background: #f2f2f2;
+	background: #fff; 
 
-	border: 1px solid #888;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	border: 1px solid #fff;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
 }
 
 .global-navigation #searchform input:focus,
@@ -473,6 +491,20 @@ th {
 .global-navigation #searchform #searchsubmit {
 	display: none;
 }
+
+.global-navigation #search-toggle {
+    display:none;
+}
+#searchform { display: none; }
+#search-toggle:checked + #searchform { display: block; }
+
+
+.search-label {
+    float: right;
+    cursor: pointer;
+    margin: 11px;
+}
+
 
 /*= Main navigation
 -----------------------------------------*/
@@ -690,16 +722,16 @@ section header time {
 section header h1,
 aside header h1 {
 	display: inline-block;
-	padding: 6px;
-	margin: 0;
+	padding: 0px;
+	margin: 20px 0;
 
-	background: #ff0000;
+	/*background: #007597;*/
 
 	border: none;
 
-	font-size: 2.4em; /*= 24px */
-	color: #ffffff;
-	font-family: 'TradeGothicLTStdBdCnNo.20', Lucida, Helvetica, Arial, sans-serif;
+	font-size: 2em; /*= 24px */
+	color: #000;
+	font-family: 'Montserrat', Lucida, Helvetica, Arial, sans-serif;
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
@@ -710,7 +742,7 @@ aside header h1 {
 }
 
 section article {
-	padding: 20px;
+	/*padding: 20px;*/
 }
 
 section article:first-of-type {

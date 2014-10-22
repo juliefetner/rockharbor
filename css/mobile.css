@@ -67,13 +67,20 @@
 }
 
 .global-navigation li.search {
-	background-position: -19px -0;
+	background-image: none;
 }
 
 .global-navigation #searchform {
 	position: absolute;
 	top: 100%;
 	width: 300px;
+}
+.global-navigation .icon-search {
+    background: url('images/rh-sprite.png') no-repeat -157px -3px;
+    background-size: 274px 39px;
+    width: 28px;
+    height: 28px;
+    margin: 0;
 }
 
 .global-navigation nav ul li ul,

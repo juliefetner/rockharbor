@@ -1,45 +1,34 @@
+<?php 
+    $menu_icon = $theme->Html->image('campus_menu.svg', array('alt' => 'Menu', 'parent' => true ));
+    $campus_short_name = $theme->themeOptions['short_name'];
+?>
 <section class="global-navigation clearfix">
-	<h1 class="clearfix">
-		<a href="/">
-			<?php
-			echo '<div class="logo">';
-			echo $theme->Html->image('logo.png', array(
-				'alt' => 'RH',
-				'parent' => false
-			));
-			echo $theme->Html->tag('span', $theme->info('short_name'), array(
-				'class' => 'secondary desktop-hide tablet-hide'
-			));
-			echo $theme->Html->image('textlogo-white.png', array(
-				'alt' => 'ROCKHARBOR',
-				'class' => 'mobile-hide',
-				'parent' => true
-			));
-			echo '</div>';
-			echo '<div class="title">';
-			if (!$theme->info('hide_name_in_global_nav')) {
-				echo $theme->Html->tag('span', $theme->info('name'), array(
-					'class' => 'mobile-hide'
-				));
-			}
-			echo '</div>';
-			?>
-		</a>
-	</h1>
-	<nav>
+	<div class="wrapper">
+        <div class="campus-menu">
+            <a id="simple-menu" href="#campus-menu"><?php echo $menu_icon; ?></a>
+            
+
+            <div class="campus-name">
+                <?php 
+                    echo strtoupper( $campus_short_name ); 
+                    if($campus_short_name !== '') echo ' Campus';
+                ?>
+            </div>
+        </div>
+    
+	<nav class="clearfix">
 		<ul class="clearfix">
+            
 			<li class="menu">
 				<!-- for mobile use only -->
-			</li>
-			<li class="campuses">
-				<a class="dropdown" href="#">Campuses</a>
-				<?php
-				echo $theme->render('campus_menu');
-				?>
-			</li>
+			</li>			
 			<li class="search">
-				<?php get_search_form(); ?>
+				<label for="search-toggle" class="search-label icon-search"></label>
+                <input type="checkbox" id="search-toggle">
+                <?php get_search_form(); ?>
+                <!-- <?php echo $theme->Html->image('search-icon.svg', array('alt' => 'Search', 'class' => 'search-icon', 'parent' => true )); ?>  -->
 			</li>
 		</ul>
 	</nav>
+    </div>
 </section>

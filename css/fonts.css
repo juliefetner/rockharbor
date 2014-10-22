@@ -14,3 +14,54 @@
 
 }
 
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+
+.icon-book {
+    background: url('images/rh-sprite.png') no-repeat 0 -1px;
+    background-size: 274px 39px;
+    width: 24px;
+    height: 36px;
+}
+.icon-close {
+    background: url('images/rh-sprite.png') no-repeat -33px -11px;
+    background-size: 274px 39px;
+    width: 17px;
+    height: 17px;
+}
+.icon-chat, #frontpage-sidebar .pre-image {
+    background: url('images/rh-sprite.png') no-repeat -58px -5px;
+    background-size: 274px 39px;
+    width: 34px;
+    height: 29px;
+}
+.icon-girl {
+    background: url('images/rh-sprite.png') no-repeat -101px 0;
+    background-size: 274px 39px;
+    width: 24px;
+    height: 39px;
+}
+.icon-search {
+    background: url('images/rh-sprite.png') no-repeat -134px -11px;
+    background-size: 274px 39px;
+    width: 16px;
+    height: 16px;
+}
+.icon-search-large {
+    background: url('images/rh-sprite.png') no-repeat -157px -3px;
+    background-size: 274px 39px;
+    width: 28px;
+    height: 28px;
+}
+.icon-prev {
+    background: url('images/rh-sprite.png') no-repeat -193px -2px;
+    background-size: 274px 39px;
+    width: 35px;
+    height: 36px;
+}
+.icon-next {
+    background: url('images/rh-sprite.png') no-repeat -239px -2px;
+    background-size: 274px 39px;
+    width: 35px;
+    height: 36px;
+}
