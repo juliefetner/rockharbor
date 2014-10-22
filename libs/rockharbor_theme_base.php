@@ -2,6 +2,7 @@
 /**
  * Includes
  */
+require_once 'acf.php';
 require_once 'basics.php';
 require_once 'html_helper.php';
 require_once 'shortcodes.php';
