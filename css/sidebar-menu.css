@@ -1,0 +1,61 @@
+.sidr {
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    width: 260px;
+    overflow-x: none;
+    overflow-y: auto;
+    background: #0D6078;
+    color: #fff;    
+    text-align: left;
+}
+
+
+.sidr.right {
+    left: auto;
+    right: -260px;
+}
+
+.sidr.left {
+    left: -260px;
+    right: auto;
+}
+
+.sidr h1,.sidr h2,.sidr h3,.sidr h4,.sidr h5,.sidr h6 {
+    color: #fff;
+    text-transform: none;
+}
+.sidr h2 {
+    font-size: 2em;
+    margin: auto 15px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+}
+.sidr .campus-logo {
+    margin: 20px 15px 50px 15px;
+}
+.sidr .icon-close {
+    float: right;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.sidr ul {
+    margin-top: 10px;
+}
+
+.sidr ul li a {
+    font-size: 1.8em;
+    padding: 15px;
+    display: block;
+}
+.sidr ul li.active, .sidr ul li:hover {
+    background-color: #1C9DC2;
+}
+.sidr a {
+    color: #fff;
+    text-decoration: none;
+}

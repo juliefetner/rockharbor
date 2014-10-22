@@ -67,6 +67,20 @@ $ebulletinpage = $theme->options('ebulletin_archive_page_id');
 		</div>
 	</div>
 </footer>
+<div id="campus-menu">
+    <div class="icon-close"></div>
+    <nav>
+        <?php echo $theme->Html->image('campus-logo.png', array('alt' => 'RockHarbor', 'class' => 'campus-logo', 'parent' => true )); ?>
+        <h2>Select Campus</h2>
+        <ul>
+            <li class="<?php if ($theme->info()['slug'] === 'costamesa') echo 'active'; ?>"><a href="#">Costa Mesa</a></li>
+            <li class="<?php if ($theme->info()['slug'] === 'fullerton') echo 'active'; ?>"><a href="#">Fullerton</a></li>
+            <li class="<?php if ($theme->info()['slug'] === 'orange') echo 'active'; ?>"><a href="#">Orange</a></li>
+            <li class="<?php if ($theme->info()['slug'] === 'missionviejo') echo 'active'; ?>"><a href="#">Mission Viejo</a></li>
+            <li class="<?php if ($theme->info()['slug'] === 'huntingtonbeach') echo 'active'; ?>"><a href="#">Huntington Beach</a></li>
+        </ul>
+    </nav>
+</div>
 <?php wp_footer(); ?>
 </body>
 </html>

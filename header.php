@@ -28,12 +28,13 @@ $hasHeader =
 ?>
 <?php get_template_part('header', 'prebody') ?>
 <body <?php body_class(); ?>>
-
-	<div id="page" class="hfeed clearfix">
-
-		<?php
-		echo $theme->render('global_navigation');
-		?>
+    <div class="main-content">
+    <?php echo $theme->render('global_navigation'); ?>
+	<div id="navigation" class="wrapper">
+            
+		<div class="rockharbor-logo">
+            <?php echo $theme->Html->image('rockharbor-logo.svg', array('alt' => 'RockHarbor', 'parent' => true )); ?>      
+        </div>
 
 		<nav id="access" role="navigation" class="clearfix">
 			<?php
@@ -81,7 +82,8 @@ $hasHeader =
 			echo $theme->Html->tag('ul', $output, array('class' => 'menu clearfix'));
 			?>
 		</nav>
-
+    </div>
+    <div id="page" class="hfeed clearfix">
 		<?php
 		if (!$theme->Shortcodes->hasShortcode('children-grid')) {
 			// touch-accessible submenu
