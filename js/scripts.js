@@ -170,6 +170,8 @@ jQuery(document).ready(function() {
 		}
 	});
 
+    jQuery('.frontpage-banner').slick({dots: true});
+
 	// implement super sonic hyper-responsive clicking for touchscreens
 	new FastClick(document.body);
 });

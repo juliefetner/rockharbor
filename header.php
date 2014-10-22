@@ -96,42 +96,16 @@ $hasHeader =
 			<?php
 			if (is_front_page() && count($featuredItems)) {
 				if (!empty($featuredItems)) {
-					$first = $featuredItems[0];
-					$firstMeta = get_post_meta($first->object_id);
-
-					if (!empty($firstMeta['video_url'][0]) && empty($meta['first_featured_only_image'])) {
-						$theme->set('campus', null);
-						if (!empty($firstMeta['video_campus_id'][0])) {
-							$theme->set('campus', $firstMeta['video_campus_id'][0]);
-						}
-						$theme->set('src', $firstMeta['video_url'][0]);
-						$banner = $theme->render('video');
-					} else {
-						if (!empty($meta['first_featured_story_height'])) {
-							$theme->set('height', $meta['first_featured_story_height']);
-						}
-						$theme->set('id', $first->object_id);
-						$theme->set('title', $first->title);
-						$theme->set('type', $first->object);
-						$theme->set('useThumbnail', false);
-						$banner = $theme->Html->tag('div', $theme->render('story_box'));
-					}
-
-					echo $theme->Html->tag('div', $banner, array(
-						'id' => 'main-feature',
-						'class' => 'clearfix'
-					));
-					echo '<div class="stories-3 clearfix">';
-					// only items 2,3,4 allowed
-					$items = array_slice($featuredItems, 1, 3);
-					foreach ($items as $item) {
-						$theme->set('useThumbnail', true);
-						$theme->set('id', $item->object_id);
-						$theme->set('title', $item->title);
-						$theme->set('type', $item->object);
-						echo $theme->render('story_box');
-					}
-					echo '</div>';
+					echo '<div class="frontpage-banner">';
+                    if ( have_rows( 'slide_banners') ) :
+                        while ( have_rows('slide_banners') ) : the_row();
+                            echo '<div>';
+                            $image = get_sub_field('slide_image');
+                            echo wp_get_attachment_image( $image, 'full' );
+                            echo '</div>';
+                        endwhile;
+                    endif;
+                    echo '</div>';
 				}
 			} elseif (is_home() && has_post_thumbnail($pageForPosts)) {
 				echo get_the_post_thumbnail($pageForPosts);
