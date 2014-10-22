@@ -605,7 +605,8 @@ class RockharborThemeBase {
 		// save page count before we overwrite WP_Query
 		$page = get_query_var('page');
 		unset($GLOBALS['wp_query']);
-		$GLOBALS['wp_query'] =& new WP_Query();
+        // $GLOBALS['wp_query'] =& new WP_Query(); // FOR < PHP5
+		$GLOBALS['wp_query'] = new WP_Query();
 
 		global $wpdb, $wp_query, $table_prefix;
 
