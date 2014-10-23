@@ -11,13 +11,7 @@ $ebulletinpage = $theme->options('ebulletin_archive_page_id');
 	</div>
 </div>
 <?php endif; ?>
-<footer role="contentinfo">
-	<div class="tabs clearfix">
-		<a href="javascript:void(0)" data-tab="#footer .first" class="icon-message"></a>
-		<a href="javascript:void(0)" data-tab="#footer .second" class="icon-more"></a>
-		<a href="javascript:void(0)" data-tab="#footer .third" class="icon-connect"></a>
-		<a href="javascript:void(0)" data-tab="#footer .last" class="icon-campus"></a>
-	</div>
+<footer role="contentinfo">	
     <div id="footer">
         <div class="one-fourth">
             <h3>Location</h3>

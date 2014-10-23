@@ -12,6 +12,18 @@
 	display: none !important;
 }
 
+.one-fourth {
+    width: 49.5%;
+    margin-right: 1%;
+    float: left;
+    margin-bottom: 20px;
+}
+.one-fourth:nth-child(2n) {
+    margin-right: 0;
+}
+
+
+
 /*= Main layout
 -----------------------------------------*/
 .breadcrumbs {
@@ -65,10 +77,7 @@ section header time {
 	margin-left: 10px;
 }
 
-#footer > div {
-	width: 100%;
-	display: none;
-}
+
 
 #footer .first {
 	display: block;
@@ -163,7 +172,7 @@ nav.submenu {
 }
 
 #access {
-	margin-bottom: 0;
+	/*margin-bottom: 0;*/
 }
 
 #access ~ nav.submenu {
@@ -190,7 +199,7 @@ nav.submenu a {
 /*= Main navigation
 -----------------------------------------*/
 #access {
-	margin-top: 0;
+	/*margin-top: 0;*/
 }
 
 #access ul li:hover div.submenu {

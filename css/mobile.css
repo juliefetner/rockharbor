@@ -16,6 +16,12 @@
 	color: #fff;
 }
 
+.one-fourth, .one-third, .one-half {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+}
+
 /*= Global navigation
 -----------------------------------------*/
 .global-navigation {
@@ -76,11 +82,11 @@
 	width: 300px;
 }
 .global-navigation .icon-search {
-    background: url('images/rh-sprite.png') no-repeat -157px -3px;
-    background-size: 274px 39px;
+    background: url('images/rh-sprite.png') no-repeat -329px -6px;
+    background-size: 456px 39px;
     width: 28px;
     height: 28px;
-    margin: 0;
+    margin: 2px 0 0 0;
 }
 
 .global-navigation nav ul li ul,
@@ -145,19 +151,23 @@ section header {
 	padding: 0 0 10px 0;
 }
 
-#footer > div {
-	width: 100%;
-	display: none;
-}
-
 #footer .first {
 	display: block;
 }
 
 /*= Main navigation
 -----------------------------------------*/
+.rockharbor-logo {
+    float: none;
+    margin: 20px 0;
+}
 #access {
 	display: none;
+    float: none;
+}
+
+#access ul {
+    float: none;
 }
 
 #access ul li {
@@ -243,6 +253,11 @@ nav.submenu ul {
 #frontpage-sidebar header h1,
 #featured header h1 {
 	display: block;
+}
+
+#map .one-third {
+    border: none;
+    border-bottom: 2px solid white;
 }
 
 /*= Articles
