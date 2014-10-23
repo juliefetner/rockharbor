@@ -18,50 +18,63 @@
 
 
 .icon-book {
-    background: url('images/rh-sprite.png') no-repeat 0 -1px;
-    background-size: 274px 39px;
-    width: 24px;
-    height: 36px;
+    background: url('images/rh-sprite.png') no-repeat -93px -1px;
+    background-size: 456px 39px;
+    width: 25px;
+    height: 37px;
 }
 .icon-close {
-    background: url('images/rh-sprite.png') no-repeat -33px -11px;
-    background-size: 274px 39px;
-    width: 17px;
-    height: 17px;
+    background: url('images/rh-sprite.png') no-repeat -144px -11px;
+    background-size: 456px 39px;
+    width: 18px;
+    height: 18px;
 }
-.icon-chat, #frontpage-sidebar .pre-image {
-    background: url('images/rh-sprite.png') no-repeat -58px -5px;
-    background-size: 274px 39px;
+.icon-chat {
+    background: url('images/rh-sprite.png') no-repeat -183px -5px;
+    background-size: 456px 39px;
     width: 34px;
-    height: 29px;
+    height: 30px;
 }
 .icon-girl {
-    background: url('images/rh-sprite.png') no-repeat -101px 0;
-    background-size: 274px 39px;
-    width: 24px;
+    background: url('images/rh-sprite.png') no-repeat -236px 0;
+    background-size: 456px 39px;
+    width: 25px;
     height: 39px;
 }
 .icon-search {
-    background: url('images/rh-sprite.png') no-repeat -134px -11px;
-    background-size: 274px 39px;
+    background: url('images/rh-sprite.png') no-repeat -288px -12px;
+    background-size: 456px 39px;
     width: 16px;
     height: 16px;
 }
 .icon-search-large {
-    background: url('images/rh-sprite.png') no-repeat -157px -3px;
-    background-size: 274px 39px;
+    background: url('images/rh-sprite.png') no-repeat -329px -6px;
+    background-size: 456px 39px;
     width: 28px;
     height: 28px;
 }
 .icon-prev {
-    background: url('images/rh-sprite.png') no-repeat -193px -2px;
-    background-size: 274px 39px;
+    background: url('images/rh-sprite.png') no-repeat -421px -2px;
+    background-size: 456px 39px;
     width: 35px;
-    height: 36px;
+    height: 35px;
 }
 .icon-next {
-    background: url('images/rh-sprite.png') no-repeat -239px -2px;
-    background-size: 274px 39px;
+    background: url('images/rh-sprite.png') no-repeat -373px -2px;
+    background-size: 456px 39px;
     width: 35px;
-    height: 36px;
+    height: 35px;
+}
+
+.icon-next-simple {
+    background: url('images/rh-sprite.png') no-repeat 0 -2px;
+    background-size: 456px 39px;
+    width: 20px;
+    height: 35px;
+}
+.icon-prev-simple {
+    background: url('images/rh-sprite.png') no-repeat -49px -2px;
+    background-size: 456px 39px;
+    width: 20px;
+    height: 35px;
 }

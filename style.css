@@ -1054,11 +1054,25 @@ footer #mc-embedded-subscribe {
 #branding .stories-3 .story-box {
 	margin-bottom: 0;
 }
+
+#faq .faq-slides {
+    margin-top: 20px;
+}
+.faq-title {
+    margin: 0;
+    padding: 7px;
+}
+
+.slide-inner h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
 #recent-news {
     margin-top: 30px;
 }
 
-#recent-news .icon-girl, #recent-news .icon-book, .home #frontpage-sidebar .pre-image {
+#recent-news .icon-girl, #recent-news .icon-book, .home #frontpage-sidebar .pre-image, .icon-chat {
     float: left;
     margin-right: 20px;
 }

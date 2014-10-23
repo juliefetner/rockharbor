@@ -10,22 +10,25 @@
 global $wp_rewrite, $wp_query, $more, $wpdb, $post;
 get_header();
 ?>
-		<section id="frontpage-sidebar" role="complementary" class="clearfix">
-            <div class="icon-book"></div>
-            <h3>Frequently Asked Questions</h3>
+		<section id="faq" role="complementary" class="clearfix">
+            <div class="icon-chat"></div>
+            <h3 class="faq-title">Frequently Asked Questions</h3>
+            <div class="clearfix"></div>
+            <div class="faq-slides">
             <?php 
                 if ( have_rows( 'faq') ) :
                     while ( have_rows('faq') ) : the_row();
-                        echo '<div class="one-fourth">';
-                        $faq_image = wp_get_attachment_image( get_sub_field('image'), 'full' );
+                        echo '<div class="faq-slide"><div class="slide-inner">';
+                        $faq_image = wp_get_attachment_image( get_sub_field('image'), 'full', 'flase', array('class'  => "faq-img") );
                         $faq_title = get_sub_field('title');
                         $faq_url = get_sub_field('url');
                         echo "<h4>$faq_title</h4>";
                         echo $faq_image;
-                        echo '</div>';
+                        echo '</div></div>';
                     endwhile;
                 endif;
              ?>
+             </div>
 		</section>
         <section id="recent-news" class="clearfix">
     	   <div id="message" class="one-half">

@@ -25,6 +25,33 @@ jQuery(document).ready(function() {
     jQuery('#simple-menu').sidr({
         name: 'campus-menu'
     });
+
+    jQuery('.frontpage-banner').slick({dots: true});
+
+    jQuery('.faq-slides').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+        ]
+    });
+
     jQuery('.icon-close, .main-content').on('click', function(){
         jQuery.sidr('close', 'campus-menu');
     });
@@ -170,7 +197,6 @@ jQuery(document).ready(function() {
 		}
 	});
 
-    jQuery('.frontpage-banner').slick({dots: true});
 
 	// implement super sonic hyper-responsive clicking for touchscreens
 	new FastClick(document.body);
