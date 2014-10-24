@@ -33,17 +33,15 @@ body {
 
 	background: #fff;
 }
-
+* { box-sizing: border-box; }
 #page,
 #footer, .wrapper {
 	max-width: 1200px;
 	width: 90%;
 	display: inline-block;
-
 	text-align: left;
 }
-.wrapper, .breadcrumbs, #main {
-    box-sizing: border-box;
+.wrapper, .breadcrumbs, #main {    
     padding: 0 30px;
 }
 
@@ -340,7 +338,7 @@ th {
 
 .global-navigation {
 	position: relative;
-	padding-right: 10px;
+	/*padding-right: 10px;*/
 	margin-bottom: 10px;
 	height: 40px;
 
@@ -1162,7 +1160,7 @@ a.prev {
 	display: inline-block;
 	margin: 0 3px;
 	padding: 6px;
-	width: 1em;
+    width: 2.1em;
 
 	font-size: 1.3em; /*= 13px */
 
