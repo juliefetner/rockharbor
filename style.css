@@ -42,7 +42,7 @@ body {
 
 	text-align: left;
 }
-.wrapper {
+.wrapper, .breadcrumbs, #main {
     box-sizing: border-box;
     padding: 0 30px;
 }
@@ -735,7 +735,8 @@ th {
 
 #sidebar {
 	float: left;
-	width: 25%;
+	width: 23%;
+    margin-right: 2%;
 }
 
 .page-title,
@@ -805,7 +806,7 @@ aside {
 }
 
 aside .widget-body {
-	padding: 10px;
+	padding: 0 10px 10px 0;
 	padding-top: 0;
 }
 
@@ -827,6 +828,10 @@ article:nth-of-type(even) img.every-other-float {
 
 nav.submenu {
 	margin-bottom: 10px;
+    display: none;
+}
+#main nav.submenu {
+    display: block;
 }
 
 nav.submenu ul {

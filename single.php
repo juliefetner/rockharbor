@@ -1,6 +1,7 @@
 <?php
 get_header();
 ?>
+        <div class="wrapper">
 		<header id="content-title">
 			<h1><?php wp_title(false); ?></h1>
 			<?php
@@ -36,6 +37,7 @@ get_header();
 			<?php endif; ?>
 
 		</section>
+        </div>
 
 <?php
 get_footer();

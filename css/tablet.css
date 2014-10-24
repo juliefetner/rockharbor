@@ -1,3 +1,12 @@
+@media screen and (max-width: 1125px) {
+    nav#access {
+        margin-bottom: 0;
+    }
+    .rockharbor-logo {
+        margin-bottom: 0;   
+    }
+}
+
 @media screen and (max-width: 1025px) {
 
 /*= Generic styles
@@ -42,6 +51,10 @@
 
 #content {
 	margin-top: 10px;
+}
+
+#sidebar {
+    display: none;
 }
 
 #main {
@@ -165,10 +178,11 @@ footer .icon-campus:after {
 }
 
 nav.submenu {
-	display: none;
+	display: block;
+    margin-top: 10px;
 	float: none;
 	width: 100%;
-	background: #383838;
+	background: #fff;
 }
 
 #access {
@@ -182,10 +196,11 @@ nav.submenu {
 nav.submenu ul {
 	/* reverts columns to use element definition */
 	width: auto !important;
+    padding-left: 15px;
 }
 
 nav.submenu a {
-	color: #ffffff;
+	color: #383838;
 }
 
 /*= Global navigation
@@ -198,9 +213,7 @@ nav.submenu a {
 .wrapper {
     padding: 0;
 }
-.campus-menu {
-    margin-top: 15px;
-}
+
 
 /*= Main navigation
 -----------------------------------------*/
