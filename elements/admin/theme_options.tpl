@@ -130,6 +130,15 @@ if (!isset($_REQUEST['settings-updated'])) {
 					));
 				?>
 			</tr>
+            <tr valign="top">
+                <?php
+                    echo $theme->Html->input('instagram_user', array(
+                        'before' => '<th>',
+                        'label' => 'Instagram Username',
+                        'between' => '</th><td>',
+                    ));
+                ?>
+            </tr>
 			<tr valign="top">
 				<?php
 					echo $theme->Html->input('core_id', array(
