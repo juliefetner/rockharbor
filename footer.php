@@ -15,9 +15,7 @@ $ebulletinpage = $theme->options('ebulletin_archive_page_id');
     <div id="footer">
         <div class="one-fourth">
             <h3>Location</h3>
-            <p>3095 Redhill Ave. <br>
-            Costa Mesa, CA 92626 <br>
-            (714) 384-0914</p>
+            <p><?php the_field('address'); ?></p>
         </div>
         <div class="one-fourth">
             <ul>

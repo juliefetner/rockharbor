@@ -2,6 +2,7 @@
 
 /*= Generic styles
 -----------------------------------------*/
+
 .mobile-hide,
 .tablet-hide,
 .desktop-hide {
@@ -26,8 +27,6 @@
 -----------------------------------------*/
 .global-navigation {
 	height: 51px;
-
-	box-shadow: 0px 0px 3px 0px #888888;
 }
 
 .global-navigation nav ul li {
@@ -258,6 +257,13 @@ nav.submenu ul {
 #map .one-third {
     border: none;
     border-bottom: 2px solid white;
+}
+
+#map .wrapper {
+    padding: 50px 0;
+}
+#map .one-third {
+    text-align: center;
 }
 
 /*= Articles

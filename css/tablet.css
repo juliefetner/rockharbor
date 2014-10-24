@@ -195,6 +195,12 @@ nav.submenu a {
 
 	box-shadow: none;
 }
+.wrapper {
+    padding: 0;
+}
+.campus-menu {
+    margin-top: 15px;
+}
 
 /*= Main navigation
 -----------------------------------------*/
@@ -269,6 +275,7 @@ nav.submenu a {
 #featured header h1 {
 	display: inline-block;
 }
+
 
 /*= CORE
 -----------------------------------------*/
