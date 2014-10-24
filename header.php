@@ -33,7 +33,7 @@ $hasHeader =
 	<div id="navigation" class="wrapper">
             
 		<div class="rockharbor-logo">
-            <?php echo $theme->Html->image('rockharbor-logo.svg', array('alt' => 'RockHarbor', 'parent' => true )); ?>      
+            <?php echo $theme->Html->image('logo_1.png', array('alt' => 'RockHarbor', 'parent' => false )); ?>      
         </div>
 
 		<nav id="access" role="navigation" class="clearfix">

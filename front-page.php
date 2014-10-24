@@ -66,7 +66,7 @@ get_header();
 <section id="map" style="background-image: url( <?php echo $theme->Html->image('map.png', array('alt' => 'Menu', 'url' => true, 'parent' => false )); ?>)">
     <div class="wrapper">
         <div class="one-third">
-            <?php echo $theme->Html->image('map_logo.png', array('alt' => 'Menu', 'class' => 'map-logo', 'parent' => false )); ?>
+            <?php echo $theme->Html->image('logo_2.png', array('alt' => 'Menu', 'class' => 'map-logo', 'parent' => false )); ?>
         </div>
         <div class="one-third">
             <?php the_field('service_times'); ?>
