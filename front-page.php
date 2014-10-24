@@ -8,6 +8,11 @@
  * dropdown
  */
 global $wp_rewrite, $wp_query, $more, $wpdb, $post;
+$serviceTimes = $theme->options('service_time');
+$address1 = $theme->options('campus_address_1');
+$address2 = $theme->options('campus_address_2');
+$address3 = $theme->options('campus_address_3');
+
 get_header();
 ?>
 		<section id="faq" role="complementary" class="clearfix">
@@ -69,10 +74,18 @@ get_header();
             <?php echo $theme->Html->image('logo_2.png', array('alt' => 'Menu', 'class' => 'map-logo', 'parent' => false )); ?>
         </div>
         <div class="one-third">
-            <?php the_field('service_times'); ?>
+            <?php                 
+                if ( $serviceTimes ) : foreach ($serviceTimes as $time) :
+                        echo $time . '<br>';
+                endforeach; endif;
+            ?>
         </div>
         <div class="one-third last">
-            <?php the_field('address'); ?>
+            <?php 
+                echo $address1 . '<br>';
+                echo $address2 . '<br>';
+                echo $address3 . '<br>';
+            ?>
         </div>
     </div>
 </section>

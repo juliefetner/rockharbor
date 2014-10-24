@@ -7,6 +7,9 @@ $coreid = $theme->options('core_id');
 $mailchimp = $theme->options('mailchimp_id');
 $feedburnerid = $theme->options('feedburner_main');
 $ebulletinpage = $theme->options('ebulletin_archive_page_id');
+$address1 = $theme->options('campus_address_1');
+$address2 = $theme->options('campus_address_2');
+$address3 = $theme->options('campus_address_3');
 ?>
 <?php if (! is_front_page() ) : ?>
 	</div>
@@ -17,7 +20,12 @@ $ebulletinpage = $theme->options('ebulletin_archive_page_id');
     <div id="footer">
         <div class="one-fourth">
             <h3>Location</h3>
-            <p><?php the_field('address'); ?></p>
+            <p><?php 
+                echo $address1 . '<br>';
+                echo $address2 . '<br>';
+                echo $address3 . '<br>';
+                ?>
+            </p>
         </div>
         <div class="one-fourth">
             <h3>Connect</h3>
@@ -42,7 +50,8 @@ $ebulletinpage = $theme->options('ebulletin_archive_page_id');
         <div class="one-fourth">
             <ul>
                 <li>Online Giving</li>
-                <li>Login to Core</li>
+                <li><a target="_blank" href="https://core.rockharbor.org/campuses/view/Campus:<?php echo $coreid; ?>">Login to Core</a></li>
+
             </ul>
         </div>
         <div class="one-fourth last">
@@ -76,11 +85,11 @@ $ebulletinpage = $theme->options('ebulletin_archive_page_id');
         <?php echo $theme->Html->image('campus-logo.png', array('alt' => 'RockHarbor', 'class' => 'campus-logo', 'parent' => true )); ?>
         <h2>Select Campus</h2>
         <ul>
-            <li class="<?php if ($theme->info()['slug'] === 'costamesa') echo 'active'; ?>"><a href="costamesa.tentsociety.com">Costa Mesa</a></li>
-            <li class="<?php if ($theme->info()['slug'] === 'fullerton') echo 'active'; ?>"><a href="fullerton.tentsociety.com">Fullerton</a></li>
-            <li class="<?php if ($theme->info()['slug'] === 'orange') echo 'active'; ?>"><a href="orange.tentsociety.com">Orange</a></li>
-            <li class="<?php if ($theme->info()['slug'] === 'missionviejo') echo 'active'; ?>"><a href="missionviejo.tentsociety.com">Mission Viejo</a></li>
-            <li class="<?php if ($theme->info()['slug'] === 'huntingtonbeach') echo 'active'; ?>"><a href="huntingtonbeach.tentsociety.com">Huntington Beach</a></li>
+            <li class="<?php if ($theme->info()['slug'] === 'costamesa') echo 'active'; ?>"><a href="//costamesa.tentsociety.com">Costa Mesa</a></li>
+            <li class="<?php if ($theme->info()['slug'] === 'fullerton') echo 'active'; ?>"><a href="//fullerton.tentsociety.com">Fullerton</a></li>
+            <li class="<?php if ($theme->info()['slug'] === 'orange') echo 'active'; ?>"><a href="//orange.tentsociety.com">Orange</a></li>
+            <li class="<?php if ($theme->info()['slug'] === 'missionviejo') echo 'active'; ?>"><a href="//missionviejo.tentsociety.com">Mission Viejo</a></li>
+            <li class="<?php if ($theme->info()['slug'] === 'huntingtonbeach') echo 'active'; ?>"><a href="//huntingtonbeach.tentsociety.com">Huntington Beach</a></li>
         </ul>
     </nav>
 

@@ -899,6 +899,10 @@ footer h3, footer li {
 	text-transform: uppercase;
 }
 
+#footer .one-fourth li a {
+    font-size: 1em;
+}
+
 footer .bottom {
     clear: both;
     width: 100%;
@@ -947,7 +951,6 @@ footer #mc-embedded-subscribe {
 {
 	color: #fff;
 	text-decoration: none;
-	font-size: 1.3em;
 }
 
 #footer div:not(:last-of-type) a:hover,
