@@ -90,7 +90,7 @@ get_header();
     </div>
 </section>
 <section id="mission">
-    <h2><?php the_field('mission_statement'); ?></h2>
+    <h2><?php bloginfo('description'); ?></h2>
 </section>
 
 <?php
