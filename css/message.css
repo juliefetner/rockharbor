@@ -19,7 +19,7 @@
 	min-height: 20px;
 }
 #content article.message-series .series-details {
-    float: right;
+    /*float: right;*/
 }
 #content article.message-series p {
 	display: block;
@@ -34,12 +34,12 @@
 -----------------------------------------*/
 #content article.first.message-series {
 	padding: 0 0 20px 0;
-
-	/*border-bottom: 1px dotted #747474;*/
+    margin-bottom: 50px;
 }
 
 #content article.first.message-series time {
 	float: none;
+    margin: 10px 0;
 }
 
 #content article.first.message-series .series-image {
@@ -52,15 +52,36 @@
 	width: 57.5%;
 	float: right;
 }
+#content article.first.message-series .series-details h2 a {
+    text-decoration: none;
+}
+#content article.first.message-series .series-button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #007597;
+    text-decoration: none;
+}
+.series-link-buttons {
+    margin-top: 40px;
+}
+.series-link-buttons span {
+    margin: 0 10px;
+}
+#content article.first.message-series .series-button:hover {
+    background-color: #006988;
+}
 #content article .series-title {
     margin: 5px 0;
 }
+#content article .series-title h4 {
+    margin: 10px 0 5px 0;
+}
 #content article .series-title h4 a {
     text-decoration: none;
-    color: #000;
+    color: #007597;
     font-size: .9em;
-    text-transform: uppercase;
-    margin-top: 5px;
+    font-weight: 700;
+    text-transform: uppercase;    
 }
 
 #content article.first.message-series p {

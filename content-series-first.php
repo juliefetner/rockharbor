@@ -39,19 +39,20 @@ $termlink = get_term_link((int)$item->term_id, 'series');
 				<p>
 					<?php echo $item->last->post_excerpt; ?>
 				</p>
-				<p>
+				<p class="series-link-buttons">
 					<?php
 					echo $theme->Html->tag('a', 'Watch This Message', array(
 						'href' => $permalink,
-						'title' => $item->last->post_title
-					));
+						'title' => $item->last->post_title,
+                        'class' => 'series-button'
+ 					));
 					?>
-				</p>
-				<p>
+				<span>or</span>
 					<?php
 					echo $theme->Html->tag('a', 'More Messages in "'.$item->name.'"', array(
 						'href' => $termlink,
-						'title' => $item->name
+						'title' => $item->name,
+                        'class' => 'series-button'
 					));
 					?>
 				</p>
