@@ -1127,10 +1127,7 @@ class RockharborThemeBase {
  *
  * @param string $url File url
  */
-	public function s3Url($url) {        
-        if (defined('ENV_DEV')) {
-           return $url;
-        }
+	public function s3Url($url) {
 		global $blog_id;
 
 		$subsitePath = 'wp-content/uploads';
