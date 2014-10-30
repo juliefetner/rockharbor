@@ -7,9 +7,27 @@
 	echo $theme->Html->input('video_url', array(
 		'label' => false,
 		'div' => false,
-		'size' => 120
+		'size' => 80,
+        'width' => '100%'
 	));
 	?>
+</p>
+<p>
+    <?php
+    echo $theme->Html->input('vimeo_url', array(
+        'type' => 'checkbox',
+        'label' => 'Check If Vimeo URL',
+        'value' => 1
+    ));
+    ?>
+    <br>
+    <?php
+    echo $theme->Html->input('vimeo_wide', array(
+        'type' => 'checkbox',
+        'label' => 'Wide Format Vimeo',
+        'value' => 1
+    ));
+    ?>
 </p>
 <p>
 	<strong>Campus</strong><br />
