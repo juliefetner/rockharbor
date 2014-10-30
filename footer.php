@@ -10,11 +10,10 @@ $ebulletinpage = $theme->options('ebulletin_archive_page_id');
 $address1 = $theme->options('campus_address_1');
 $address2 = $theme->options('campus_address_2');
 $address3 = $theme->options('campus_address_3');
+
+    //  Front Page closes #main and #page earlier for full width sections
+    if (! is_front_page() ) echo "</div></div>"; 
 ?>
-<?php if (! is_front_page() ) : ?>
-	</div>
-</div>
-<?php endif; ?>
 
 <footer role="contentinfo">	
     <div id="footer">
@@ -23,7 +22,7 @@ $address3 = $theme->options('campus_address_3');
             <p><?php 
                 echo $address1 . '<br>';
                 echo $address2 . '<br>';
-                echo $address3 . '<br>';
+                echo $address3;
                 ?>
             </p>
         </div>
