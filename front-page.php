@@ -21,9 +21,9 @@ get_header();
             
     </div></div> <!-- #main & #page -->
 
-    <section id="map" style="background-image: url( <?php echo $theme->Html->image('map.png', array('alt' => 'Menu', 'url' => true, 'parent' => false )); ?>)">
-        <?php echo $theme->render('home-map'); ?>
-    </section>
+    
+    <?php echo $theme->render('home-map'); ?>
+    
 
     <section id="mission">
         <h2><?php bloginfo('description'); ?></h2>
