@@ -90,10 +90,12 @@ class Admin {
 		add_action('personal_options_update', array($this, 'onUserSave'));
 		add_action('edit_user_profile_update', array($this, 'onUserSave'));
 
-		add_filter('save_post', array($this, 'onSave'), 1, 2);
-		add_filter('wp_delete_file', array($this, 'deleteS3File'));
-		add_action('wp_redirect', array($this, 'invalidateCloudfrontPosts'));
-		add_filter('wp_update_attachment_metadata', array($this, 'transferToS3'), 10, 2);
+        if (! defined('ENV_DEV')) {
+    		add_filter('save_post', array($this, 'onSave'), 1, 2);
+    		add_filter('wp_delete_file', array($this, 'deleteS3File'));
+    		add_action('wp_redirect', array($this, 'invalidateCloudfrontPosts'));
+    		add_filter('wp_update_attachment_metadata', array($this, 'transferToS3'), 10, 2);
+        }
 	}
 
 /**
