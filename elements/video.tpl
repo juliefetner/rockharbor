@@ -46,14 +46,14 @@ if ($vimeo == '1') : ?>
         <script type="text/javascript">
                 var vimeoRatio = jQuery('.vimeo-embed').attr('data-ratio');
                 if (vimeoRatio === 'wide'){
-                    var ratio = 720/307;
+                    var ratio = 1920/817;                    
                 } else {
                     var ratio = 16/9;
                 }
                 var setVimeoHeight = function() {
                     var vimeo = jQuery('.vimeo-embed');
                     vimeo.width('100%');
-                    vimeo.height(vimeo.width() / ratio);
+                    vimeo.height(Math.floor(vimeo.width() / ratio) + 2);
                 }
                 jQuery(window).on('resize', setVimeoHeight);
                 setVimeoHeight();
