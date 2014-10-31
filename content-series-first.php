@@ -44,7 +44,7 @@ $termlink = get_term_link((int)$item->term_id, 'series');
 					echo $theme->Html->tag('a', 'Watch This Message', array(
 						'href' => $permalink,
 						'title' => $item->last->post_title,
-                        'class' => 'series-button'
+                        'class' => 'rh-button'
  					));
 					?>
 				<span>or</span>
@@ -52,7 +52,7 @@ $termlink = get_term_link((int)$item->term_id, 'series');
 					echo $theme->Html->tag('a', 'More Messages in "'.$item->name.'"', array(
 						'href' => $termlink,
 						'title' => $item->name,
-                        'class' => 'series-button'
+                        'class' => 'rh-button'
 					));
 					?>
 				</p>

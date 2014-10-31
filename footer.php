@@ -54,17 +54,13 @@ $address3 = $theme->options('campus_address_3');
             </ul>
         </div>
         <div class="one-fourth last">
-            <ul>
-                <li>Contact Us</li>
-                <li>Staff Directory</li>
-                <li>Jobs</li>
-            </ul>
+            <?php wp_nav_menu(array('theme_location' => 'footer', 'fallback_cb' => create_function('', 'return;'))); ?>
         </div>
         <div class="bottom">
             <div class="one-fourth">
                  <?php echo $theme->Html->image('footer-logo.png', array('alt' => 'rockharbor', 'parent' => true )); ?>
             </div>
-            <div class="one-fourth">
+            <div class="one-half">
                 <div class="newsletter">
                     <h3>E-Bulletin</h3>
                     <form action="http://rockharbor.us4.list-manage.com/subscribe/post?u=185dbb9016568292b89c8731c&amp;id=06151f2612" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">

@@ -46,7 +46,7 @@ if ($vimeo == '1') : ?>
         <script type="text/javascript">
                 var vimeoRatio = jQuery('.vimeo-embed').attr('data-ratio');
                 if (vimeoRatio === 'wide'){
-                    var ratio = 720/307;
+                    var ratio = 2.35/1;
                 } else {
                     var ratio = 16/9;
                 }

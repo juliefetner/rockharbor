@@ -55,20 +55,13 @@
 #content article.first.message-series .series-details h2 a {
     text-decoration: none;
 }
-#content article.first.message-series .series-button {
-    padding: 10px 20px;
-    color: white;
-    background-color: #007597;
-    text-decoration: none;
-}
+
+
 .series-link-buttons {
     margin-top: 40px;
 }
 .series-link-buttons span {
     margin: 0 10px;
-}
-#content article.first.message-series .series-button:hover {
-    background-color: #006988;
 }
 #content article .series-title {
     margin: 5px 0;
@@ -78,7 +71,7 @@
 }
 #content article .series-title h4 a {
     text-decoration: none;
-    color: #007597;
+    color: #19ACCD;
     font-size: .9em;
     font-weight: 700;
     text-transform: uppercase;    

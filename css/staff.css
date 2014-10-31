@@ -42,8 +42,8 @@
 
 .single-staff article.staff .staff-details {
 	float: left;
-	width: 28.875%;
-	margin-right: 1.125%;
+	width: 24%;
+	margin-right: 2%;    
 }
 
 .single-staff article.staff .staff-details dd,
@@ -53,5 +53,5 @@
 
 .single-staff article.staff .staff-bio {
 	float: left;
-	width: 70%;
+	width: 74%;
 }

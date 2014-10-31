@@ -30,7 +30,7 @@ embed {
 /* see: http://clagnut.com/blog/348/ */
 body {
 	font-size: 62.5%; /*= reset browser to 10px */
-	font-family: 'Lucida Sans', Helvetica, Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	color: #383838;
 	text-align: center;
 
@@ -46,11 +46,26 @@ body {
 }
 .wrapper, #main {    
     padding: 0 30px;
-    margin-bottom: -1px;
+    margin-bottom: -2px;
+}
+#main {
+    overflow: hidden;
 }
 
 /*= Generic styles
 -----------------------------------------*/
+.rh-button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #1C9DC2;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.rh-button:hover {
+    background-color: #0D6078;
+}
+
 object,
 embed,
 video,
@@ -69,8 +84,8 @@ hr {
 p {
 	margin-bottom: 10px;
 
-	font-size: 1.3em; /*= 13px */
-	line-height: 1.4em; /*= 14px */
+	font-size: 1.4em; /*= 13px */
+	line-height: 1.6em; /*= 14px */
 }
 
 p a,
@@ -81,8 +96,12 @@ p input
 }
 
 a {
-	text-decoration: underline;
-	color: #1C9D92;
+	text-decoration: none;
+	color: #19ACCD;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.entry-content a {
+    font-family: Arial, sans-serif;
 }
 
 strong {
@@ -99,7 +118,7 @@ h3,
 h4 {
 	margin-bottom: 10px;
 
-	font-family: 'Montserrat', Lucida, Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 	color: #383838;
@@ -723,8 +742,7 @@ th {
 #sidebar,
 #content {
 	float: right;
-	width: 75%;
-
+	width: 75%;    
 	background: #ffffff;
 }
 
@@ -743,8 +761,12 @@ th {
 
 #sidebar {
 	float: left;
-	width: 23%;
-    margin-right: 2%;
+	width: 22.5%;
+    margin-right: 2.5%;    
+    background-color: #F3F3F3;
+    padding: 20px;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
 }
 
 .page-title,
@@ -765,13 +787,13 @@ section header h1,
 aside header h1 {
 	display: inline-block;
 	padding: 0px;
-	margin: 30px 0 20px 0;
+	margin: 30px 0 15px 0;
 
 	border: none;
 
 	font-size: 2em; /*= 24px */
 	color: #000;
-	font-family: 'Montserrat', Lucida, Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
@@ -808,7 +830,6 @@ aside {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 
-	background: #ffffff;
 }
 
 aside .widget-body {
@@ -852,7 +873,7 @@ nav.submenu a {
 	margin-bottom: 10px;
 	display: block;
 
-	font-family: Lucida, Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
 	text-decoration: none;
 	color: #686868;
 	font-size: 1.3em; /*= 13px */
@@ -860,9 +881,9 @@ nav.submenu a {
 
 nav.submenu li.current-menu-item a,
 nav.submenu a:hover {
-	border-color: #1C9DC2;
+	border-color: #19ACCD;
 
-	color: #1C9DC2;
+	color: #19ACCD;
 }
 
 nav.submenu li.current_page_item > a {
@@ -870,7 +891,7 @@ nav.submenu li.current_page_item > a {
 }
 
 footer {
-	margin-top: 10px;
+	margin-top: 30px;
 	width: 100%;
 
 	background: #383838;
@@ -899,7 +920,7 @@ footer .tabs a.selected {
 }
 
 footer h3, footer li {
-	font-family: 'Montserrat', Lucida, Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 1.4em; /*= 20px */
     line-height: 2em;
 	text-transform: uppercase;
@@ -917,14 +938,18 @@ footer .bottom {
     padding-top: 30px;
 }
 
+footer .newsletter {
+    max-width: 400px;
+}
+
 footer .required.email {
-    height: 28px;
+    height: 36px;
     width: 65%;
     float: left;
     border: none;
 }
 footer #mc-embedded-subscribe {
-    height: 28px;
+    height: 36px;
     width: 30%;
     float: left;
     border: none;
@@ -933,7 +958,6 @@ footer #mc-embedded-subscribe {
 }
 #footer ul.menu li {
 	display: block;
-	margin-bottom: 10px;
 }
 
 #footer .third form {
@@ -1134,6 +1158,7 @@ footer #mc-embedded-subscribe {
 /*= Main content
 -----------------------------------------*/
 .breadcrumbs {
+    font-family: 'Montserrat', Arial, sans-serif;
 	padding-bottom: 15px;
     border-bottom: 1px solid #dedede;
     margin: 0 30px;
@@ -1162,7 +1187,7 @@ a.page-numbers {
 
 a.next,
 a.prev {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 .page-numbers {
@@ -1399,7 +1424,7 @@ time span {
 	display: inline-block;
 	padding: 1px;
 
-	font-family: 'Montserrat', Lucida, Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
 	text-transform: uppercase;
 	font-size: 1.8em; /*= 18px */
 }
@@ -1500,7 +1525,7 @@ input[type=submit] {
 	padding: 5px;
 
 	color: #ffffff;
-	font-family: 'Montserrat', Lucida, Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
 	text-transform: uppercase;
 
 	background: #1C9DC2;
@@ -1602,7 +1627,7 @@ input[type="search"]::-webkit-search-cancel-button {
 	padding: 6px;
 	margin: 0 !important;
 
-	font-family: 'Montserrat', Lucida, Helvetica, Arial, sans-serif !important;
+	font-family: 'Montserrat', Arial, sans-serif !important;
 	text-decoration: none;
 	font-size: 2.4em !important; /*= 28px */
 	text-transform: uppercase;
