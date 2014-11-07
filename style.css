@@ -730,12 +730,13 @@ th {
 
 #branding {
 	margin-bottom: 10px;
-	padding: 0;
+	padding: 0 30px;
     padding-bottom: 10px;
 	background: #fff;
     clear: both;
 	/*box-shadow: 0px 0px 3px 0px #888888;*/
 }
+.home #branding { padding: 0; }
 
 #branding > div {
 	margin-top: 10px;
