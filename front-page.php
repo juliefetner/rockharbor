@@ -10,20 +10,21 @@
 global $wp_rewrite, $wp_query, $more, $wpdb, $post;
 
 get_header();
-?>  
+?>
+    <?php if( $theme->info('name') === "" ) echo $theme->render('campus-popup'); ?>
         <section id="faq" role="complementary" class="clearfix">
             <?php echo $theme->render('home-faq'); ?>
         </section>
-    		
+
         <section id="recent-news" class="clearfix">
         	   <?php echo $theme->render('home-news'); ?>
         </section>
-            
+
     </div></div> <!-- #main & #page -->
 
-    
+
     <?php echo $theme->render('home-map'); ?>
-    
+
 
     <section id="mission">
         <h2><?php bloginfo('description'); ?></h2>

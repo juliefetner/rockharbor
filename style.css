@@ -1623,11 +1623,11 @@ input[type="search"]::-webkit-search-cancel-button {
 /*= Campus menu
 -----------------------------------------*/
 .campus-list a {
-	display: block !important;
+	display: block;
 	padding: 6px;
-	margin: 0 !important;
+	margin: 0;
 
-	font-family: 'Montserrat', Arial, sans-serif !important;
+	font-family: 'Montserrat', Arial, sans-serif;
 	text-decoration: none;
 	font-size: 2.4em !important; /*= 28px */
 	text-transform: uppercase;
