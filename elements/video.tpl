@@ -53,7 +53,12 @@ if ($vimeo == '1') : ?>
                 var setVimeoHeight = function() {
                     var vimeo = jQuery('.vimeo-embed');
                     vimeo.width('100%');
-                    vimeo.height(Math.floor(vimeo.width() / ratio) + 2);
+                    if (vimeoRatio === 'wide') { 
+                        vimeo.height(Math.floor(vimeo.width() / ratio) + 2);
+                    } else { 
+                        vimeo.height(vimeo.width() / ratio); 
+                    }
+                    
                 }
                 jQuery(window).on('resize', setVimeoHeight);
                 setVimeoHeight();

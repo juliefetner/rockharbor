@@ -2,9 +2,15 @@
 
 $serviceTimes = $theme->options('service_time');
 $map = get_field('location_background');
+if ($map){
+    $map_img = wp_get_attachment_image_src( $map, 'full' )[0];
+} else {
+    $map_img = $theme->Html->image('map-'.$theme->info('slug').'.jpg', array( 'parent' => true, 'url' => true ));
+}   
+
 ?>
 
-<section id="map" style="background-image: url( <?php echo wp_get_attachment_image_src( $map, 'full' )[0]; ?>)">
+<section id="map" style="background-image: url(<?php echo $map_img; ?>);">
     <div class="wrapper">
         <div class="one-third">
             <?php echo $theme->Html->image('logo_2.png', array('alt' => 'Menu', 'class' => 'map-logo', 'parent' => false )); ?>

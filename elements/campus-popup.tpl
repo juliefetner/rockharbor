@@ -17,7 +17,7 @@
                     </div>
                 </div>
             </li>
-            <li style='background-image: url(<?php echo $theme->Html->image('map-missionviejo.jpg', array('parent' => true, 'url' => true)); ?>);'>
+            <li style='background-image: url(<?php echo $theme->Html->image('map-mission_viejo.jpg', array('parent' => true, 'url' => true)); ?>);'>
                 <div class="campus-info">
                     <div class="title">
                         <a href="http://missionviejo.rockharbor.org" class="campus-link">Mission Viejo</a>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </li>
-            <li style='background-image: url(<?php echo $theme->Html->image('map-huntingtonbeach.jpg', array('parent' => true, 'url' => true)); ?>);'>
+            <li style='background-image: url(<?php echo $theme->Html->image('map-huntington_beach.jpg', array('parent' => true, 'url' => true)); ?>);'>
                 <div class="campus-info">
                     <div class="title">
                         <a href="http://huntingtonbeach.rockharbor.org" class="campus-link">Huntington Beach</a>
