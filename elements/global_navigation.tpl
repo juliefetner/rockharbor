@@ -1,11 +1,11 @@
 <?php 
-    $menu_icon = $theme->Html->image('campus_menu.svg', array('alt' => 'Menu', 'parent' => true ));
+    
     $campus_short_name = $theme->themeOptions['short_name'];
 ?>
 <section class="global-navigation clearfix">
 	<div class="wrapper">
         <div class="campus-menu">
-            <a id="simple-menu" href="#campus-menu"><?php echo $menu_icon; ?></a>
+            <a id="simple-menu" class="select-campus" href="#campus-menu">SELECT CAMPUS</a>
             
 
             <div class="campus-name">

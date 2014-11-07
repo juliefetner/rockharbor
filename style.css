@@ -349,13 +349,24 @@ th {
 /*= Global navigation
 -----------------------------------------*/
 .campus-menu {
-    margin-top: 8px;
+    padding: 5px 0;
     display: inline-block;
 }
+.select-campus {
+    display: inline-block;
+    color: white;
+    background-color: #1C9DC2;
+    padding: 10px;
+    border-radius: 4px; 
+}
+.select-campus:hover {
+    background-color: #0D6078;
+}
 .campus-name {
-    display: table;    
-    margin-left: 45px;
-    margin-top: -17px;
+    display: inline-block;    
+    position: relative;
+    top: 2px;
+    padding-left: 5px;
     font-size: 1.3em;
 }
 
