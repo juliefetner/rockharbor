@@ -44,9 +44,8 @@ body {
 	display: inline-block;
 	text-align: left;
 }
-.wrapper, #main {    
+.wrapper, #main {
     padding: 0 30px;
-    margin-bottom: -2px;
 }
 #main {
     overflow: hidden;
@@ -349,7 +348,7 @@ th {
 /*= Global navigation
 -----------------------------------------*/
 .campus-menu {
-    padding: 5px 0;
+    padding: 7px 0;
     display: inline-block;
 }
 .select-campus {
@@ -357,13 +356,13 @@ th {
     color: white;
     background-color: #1C9DC2;
     padding: 10px;
-    border-radius: 4px; 
+    border-radius: 4px;
 }
 .select-campus:hover {
     background-color: #0D6078;
 }
 .campus-name {
-    display: inline-block;    
+    display: inline-block;
     position: relative;
     top: 2px;
     padding-left: 5px;
@@ -374,7 +373,7 @@ th {
 	position: relative;
 	/*padding-right: 10px;*/
 	margin-bottom: 10px;
-	height: 40px;
+	/*height: 40px;*/
 
 	background: #f2f2f2;
 
@@ -526,7 +525,7 @@ th {
 	font-size: 1.1em; /*= 11px */
 	text-align: right;
 
-	background: #fff; 
+	background: #fff;
 
 	border: 1px solid #fff;
 	-webkit-border-radius: 0px;
@@ -553,7 +552,7 @@ th {
 .search-label {
     float: right;
     cursor: pointer;
-    margin: 11px;
+    margin: 15px 11px;
 }
 
 
@@ -581,7 +580,7 @@ th {
     float: right;
     display: inline-block;
 	z-index: 100;
-    
+
 	background-color: #ffffff;
 }
 
@@ -717,7 +716,7 @@ th {
 #access ul li ul li.current-menu-item a {
 	background: #ff0000;
 
-	color: #0D6078; 
+	color: #0D6078;
 }
 
 /*= Main layout
@@ -754,7 +753,7 @@ th {
 #sidebar,
 #content {
 	float: right;
-	width: 75%;    
+	width: 75%;
 	background: #ffffff;
 }
 
@@ -774,7 +773,7 @@ th {
 #sidebar {
 	float: left;
 	width: 22.5%;
-    margin-right: 2.5%;    
+    margin-right: 2.5%;
     background-color: #F3F3F3;
     padding: 20px;
     margin-bottom: -99999px;
@@ -1079,11 +1078,22 @@ footer #mc-embedded-subscribe {
     padding: 0 30px;
 	box-shadow: none;
 }
+
 .home .section-title {
     margin-bottom: 10px;
 }
 .home .section-title h3 {
     padding: 7px;
+}
+
+.home .home-title h3 {
+	text-transform: none;
+}
+.home .home-title .subtitle {
+		font-size: 1.5em;
+		font-style: italic;
+		margin: 7px 0;
+		color: #939393;
 }
 
 .home .archive-page-link {
@@ -1108,19 +1118,28 @@ footer #mc-embedded-subscribe {
 #faq .faq-slides {
     margin-top: 20px;
 }
-.faq-title {
-    margin: 0;
-    padding: 7px;
+
+.home .home-title h3 {
+	margin-top: 5px;
+	margin-bottom: 0;
+	display: inline-block;
 }
+
 
 .slide-inner h4 {
     font-size: 1.3em;
     margin-bottom: 10px;
 }
 
+.home #message a, .home #story a {
+		display: block;
+		margin-top: 10px;
+}
+
 #recent-news {
     margin-top: 30px;
 }
+
 
 #recent-news .icon-girl, #recent-news .icon-book, .home #frontpage-sidebar .pre-image, .icon-chat {
     float: left;
@@ -1594,7 +1613,7 @@ input[type="search"]::-webkit-search-cancel-button {
 	width: 80%;
 }
 
-.socials li {    
+.socials li {
     display: inline-block;
     margin-right: 13px;
 }
@@ -1680,6 +1699,6 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .campus-list .global {
-	background: #1C9DC2; 
-	color: #0D6078; 
+	background: #1C9DC2;
+	color: #0D6078;
 }

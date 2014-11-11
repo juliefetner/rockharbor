@@ -1,11 +1,12 @@
 <?php global $post; ?>
 
+    <div class="home-title clearfix">
+      <div class="icon-chat"></div>
+      <h3 class="faq-title">Frequently Asked Questions</h3>
+    </div>
 
-    <div class="icon-chat"></div>
-    <h3 class="faq-title">Frequently Asked Questions</h3>
-    <div class="clearfix"></div>
     <div class="faq-slides">
-    <?php 
+    <?php
         if ( have_rows( 'faq') ) :
             while ( have_rows('faq') ) : the_row();
                 echo '<div class="faq-slide"><div class="slide-inner">';

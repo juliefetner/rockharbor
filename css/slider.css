@@ -30,7 +30,7 @@
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { opacity: 0.25; }
 
 
-.slick-prev { 
+.slick-prev {
     left: 25px;
     background: url('images/rh-sprite.png') no-repeat -421px -2px;
     background-size: 456px 39px;
@@ -43,17 +43,17 @@
     background: url('images/rh-sprite.png') no-repeat -49px -2px;
     background-size: 456px 39px;
     width: 20px;
-    height: 35px;   
+    height: 35px;
 }
 
-.slick-next { 
+.slick-next {
     right: 25px;
     background: url('images/rh-sprite.png') no-repeat -373px -2px;
     background-size: 456px 39px;
     width: 35px;
     height: 36px;
 }
-.faq-slides .slick-next { 
+.faq-slides .slick-next {
     right: -25px;
     background: url('images/rh-sprite.png') no-repeat 0 -2px;
     background-size: 456px 39px;
@@ -71,43 +71,43 @@ img.faq-img {
 /* Dots */
 .slick-slider { margin-bottom: 30px; }
 
-.slick-dots { 
-    position: absolute; 
-    bottom: -22px; 
-    list-style: none; 
-    display: block; 
-    text-align: right; 
-    padding: 0; 
-    width: 100%; 
+.slick-dots {
+    position: absolute;
+    bottom: -22px;
+    list-style: none;
+    display: block;
+    text-align: right;
+    padding: 0;
+    width: 100%;
 }
-.slick-dots li { 
-    position: relative; 
-    display: inline-block; 
-    height: 10px; 
-    width: 60px; 
-    margin: 0 5px; 
-    padding: 0; 
-    cursor: pointer; 
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 10px;
+    width: 60px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
     background-color: #d9d9d9;
 }
 .slick-dots li:last-child {
     margin-right: 0;
 }
-.slick-dots li button { 
-    display: block; 
+.slick-dots li button {
+    display: block;
     width: 100%;
     padding: 0;
-    border: 0; 
-    background: transparent; 
-    color: transparent; 
-    cursor: pointer; 
+    border: 0;
+    background: transparent;
+    color: transparent;
+    cursor: pointer;
 }
 .slick-dots li button:hover, .slick-dots li button:focus { outline: none; }
 .slick-dots li button:hover:before, .slick-dots li button:focus:before { opacity: 1; }
-.slick-dots li button:before { 
-    
+.slick-dots li button:before {
+
 }
-.slick-dots li.slick-active  { 
+.slick-dots li.slick-active  {
     background-color: #AEAEAE;
 }
 
@@ -116,3 +116,9 @@ img.faq-img {
 [dir="rtl"] .slick-prev {right: -25px;left: auto;}
 [dir="rtl"] .slick-prev:before {content: "\2192";}
 [dir="rtl"] .slick-slide {float: right;}
+
+
+@media screen and (max-width: 569px) {
+    .slick-prev { left: 10px; }
+    .slick-next { right: 10px; }
+}

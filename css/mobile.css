@@ -118,7 +118,11 @@
 }
 
 .global-navigation .campus-menu {
-    margin-top: 15px;
+    margin-top: 4px;
+}
+
+.campus-name {
+	display: none;
 }
 
 /*= Main layout
@@ -187,7 +191,7 @@ nav.submenu ul {
 
 /*= Footer
 -----------------------------------------*/
-#footer { 
+#footer {
     width: 100%;
 }
 #footer .third form input[type=email] {
@@ -244,6 +248,15 @@ nav.submenu ul {
 	text-align: left;
 }
 
+
+.home .home-title {
+	border-bottom: 2px solid #E6E6E6;
+	padding-bottom: 7px;
+}
+.home .faq-slides .slick-next {
+	right: -18px;
+}
+
 #main-feature .story-box .title {
 	max-width: 96%;
 	width: 96%;
@@ -273,7 +286,16 @@ nav.submenu ul {
 }
 #map .one-third {
     text-align: center;
+		min-height: 0;
+		margin-bottom: 0;
+		padding: 30px 0;
 }
+
+#mission h2 {
+		font-size: 4em;
+		line-height: 1.3em;
+}
+
 
 /*= Articles
 -----------------------------------------*/
