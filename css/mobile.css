@@ -54,6 +54,13 @@
 	background-image: url('images/sprite.png');
 	background-repeat: no-repeat;
 }
+.global-navigation .search-label {
+	margin: 0;
+}
+.global-navigation .search-label img {
+	width: 30px;
+	margin-top: 1px;
+}
 
 .global-navigation li.campuses > a {
 	text-indent: -9999px;
@@ -104,12 +111,12 @@
 }
 
 .global-navigation #searchform {
-	width: 90%;
+	width: 100%;
 	padding: 2%;
 
 	background: #f2f2f2;
 
-	box-shadow: 0px 2px 1px 0px #888888;
+
 }
 
 .global-navigation #searchform input {
@@ -253,6 +260,9 @@ nav.submenu ul {
 	border-bottom: 2px solid #E6E6E6;
 	padding-bottom: 7px;
 }
+.home .home-title .subtitle {
+	margin-bottom: 0;
+}
 .home .faq-slides .slick-next {
 	right: -18px;
 }
@@ -276,9 +286,12 @@ nav.submenu ul {
 	display: block;
 }
 
+
 #map .one-third {
     border: none;
     border-bottom: 2px solid white;
+		max-width: 80%;
+		margin: 0 auto;
 }
 
 #map .wrapper {
@@ -291,9 +304,14 @@ nav.submenu ul {
 		padding: 30px 0;
 }
 
+#map .map-logo {
+	max-width: 85%;
+}
+
 #mission h2 {
 		font-size: 4em;
 		line-height: 1.3em;
+		padding: 0 30px;
 }
 
 

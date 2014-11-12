@@ -1,7 +1,8 @@
 <?php global $post; ?>
 
     <div class="home-title clearfix">
-      <div class="icon-chat"></div>
+      <!-- <div class="icon-chat"></div> -->
+      <?php echo $theme->Html->image('icon-chat.svg', array('alt' => 'featured-story-icon', 'class' => 'icon-chat', 'parent' => true )); ?>
       <h3 class="faq-title">Frequently Asked Questions</h3>
     </div>
 

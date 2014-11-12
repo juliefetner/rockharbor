@@ -12,14 +12,14 @@ $address2 = $theme->options('campus_address_2');
 $address3 = $theme->options('campus_address_3');
 
     //  Front Page closes #main and #page earlier for full width sections
-    if (! is_front_page() ) echo "</div></div>"; 
+    if (! is_front_page() ) echo "</div></div>";
 ?>
 
-<footer role="contentinfo">	
+<footer role="contentinfo">
     <div id="footer">
         <div class="one-fourth">
             <h3>Location</h3>
-            <p><?php 
+            <p><?php
                 echo $address1 . '<br>';
                 echo $address2 . '<br>';
                 echo $address3;
@@ -31,17 +31,17 @@ $address3 = $theme->options('campus_address_3');
             <ul class="socials">
                 <li>
                     <a href="http://twitter.com/<?php echo $twitteruser; ?>">
-                        <?php echo $theme->Html->image('twitter-icon.png', array('alt' => 'Twitter', 'class' => 'social-icon', 'parent' => true )); ?>
+                        <?php echo $theme->Html->image('icon-twitter.svg', array('alt' => 'Twitter', 'class' => 'social-icon', 'parent' => true )); ?>
                     </a>
                 </li>
                 <li>
                     <a href="http://facebook.com/<?php echo $fbuser; ?>">
-                        <?php echo $theme->Html->image('facebook-icon.png', array('alt' => 'Facebook', 'class' => 'social-icon', 'parent' => true )); ?>
+                        <?php echo $theme->Html->image('icon-facebook.svg', array('alt' => 'Facebook', 'class' => 'social-icon', 'parent' => true )); ?>
                     </a>
                 </li>
                 <li>
                     <a href="http://instagram.com/<?php echo $instauser; ?>">
-                        <?php echo $theme->Html->image('instagram-icon.png', array('alt' => 'Instagram', 'class' => 'social-icon', 'parent' => true )); ?>
+                        <?php echo $theme->Html->image('icon-instagram.svg', array('alt' => 'Instagram', 'class' => 'social-icon', 'parent' => true )); ?>
                     </a>
                 </li>
             </ul>

@@ -3,10 +3,10 @@
        <div id="message" class="one-half">
             <?php if ( get_field('custom_sermon_series') ): ?>
                 <div class="home-title clearfix">
-                  <h3><?php the_field('sermon_series_title'); ?></h3>
-                </div>
-                <div class="section-title clearfix">
-                    <h3 class="home-title"><?php the_field('sermon_series_title'); ?></h3>
+                    <h3><?php the_field('sermon_series_title'); ?></h3>
+                    <div class="subtitle">
+                        <?php the_field('sermon_series_title'); ?>
+                    </div>
                 </div>
                 <a href="<?php the_field('sermon_series_url'); ?>">
                     <?php
@@ -20,7 +20,8 @@
                 $message = get_posts( array( 'post_type' => 'message','numberposts' => 1 ));
                 if( $message ) : foreach ($message as $m) : ?>
                     <div class="home-title clearfix">
-                        <div class="icon-book"></div>
+                        <!-- <div class="icon-book"></div> -->
+                        <?php echo $theme->Html->image('icon-book.svg', array('alt' => 'Sermon Series', 'class' => 'icon-book', 'parent' => true )); ?>
                         <h3>Current Sermon Series</h3>
                         <div class="subtitle">
                             <?php echo $m->post_title; ?>
@@ -34,7 +35,8 @@
        </div>
        <div id="story" class="one-half last">
             <div class="home-title clearfix">
-                <div class="icon-girl"></div>
+                <!-- <div class="icon-girl"></div> -->
+                <?php echo $theme->Html->image('icon-girl.svg', array('alt' => 'featured-story-icon', 'class' => 'icon-girl', 'parent' => true )); ?>
                 <h3><?php the_field('featured_story_title'); ?></h3>
                 <div class="subtitle">
                     <?php the_field('featured_story_subtitle'); ?> &nbsp;

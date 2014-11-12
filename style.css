@@ -347,6 +347,9 @@ th {
 
 /*= Global navigation
 -----------------------------------------*/
+#navigation {
+		margin-bottom: -2px;
+}
 .campus-menu {
     padding: 7px 0;
     display: inline-block;
@@ -552,7 +555,7 @@ th {
 .search-label {
     float: right;
     cursor: pointer;
-    margin: 15px 11px;
+    margin: 4px 0 0 10px;
 }
 
 
@@ -933,9 +936,10 @@ footer .tabs a.selected {
 footer h3, footer li {
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 1.4em; /*= 20px */
-    line-height: 2em;
+	line-height: 1.4em;
 	text-transform: uppercase;
 }
+
 
 #footer .one-fourth li a {
     font-size: 1em;
@@ -1129,6 +1133,7 @@ footer #mc-embedded-subscribe {
 .slide-inner h4 {
     font-size: 1.3em;
     margin-bottom: 10px;
+		text-transform: none;
 }
 
 .home #message a, .home #story a {
@@ -1160,12 +1165,13 @@ footer #mc-embedded-subscribe {
 #map .one-third {
     color: #fff;
     font-size: 2.4em;
+		line-height: 1.1em;
     font-family: 'TradeGothicLTStdBdCnNo.20';
     box-sizing:border-box;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
     border-right: 2px solid white;
-    min-height: 130px;
+    min-height: 100px;
     padding: 10px;
 }
 #map .one-third.last { border: none; }
@@ -1616,6 +1622,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .socials li {
     display: inline-block;
     margin-right: 13px;
+		margin-top: 2px;
 }
 .socials .social-icon {
     height: 23px;

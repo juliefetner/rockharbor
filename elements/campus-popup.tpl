@@ -10,7 +10,7 @@
                 <div class="campus-info">
                     <div class="title">
                         <a href="http://costamesa.rockharbor.org" class="campus-link">Costa Mesa</a>
-                        <p>Visit costamesa.rockharbor.org &#8594;</p>    
+                        <p>Visit costamesa.rockharbor.org &#8594;</p>
                     </div>
                     <div class="service-times">
                         <?php echo do_shortcode('[service-times campus="9"]'); ?>
@@ -62,7 +62,7 @@
                 </div>
             </li>
         </ul>
-        <a href="javascript:RH.hideSplash(true);" class="continue">
+        <a href="javascript:RH.hideSplash('www');" class="continue">
             CONTINUE TO ROCKHARBOR.ORG
         </a>
     </div>
