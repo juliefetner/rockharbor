@@ -14,10 +14,10 @@ $page = rawurlencode($page);
 $title = rawurlencode($title);
 ?>
 <a class="share-facebook" href="http://www.facebook.com/sharer.php?u=<?php echo $page; ?>&t=<?php echo $title; ?>">
-	<?php echo $theme->Html->image('facebook-icon.png', array('parent' => false, 'alt' => 'Share on Facebook')); ?>
+	<?php echo $theme->Html->image('icon-facebook.svg', array('parent' => true, 'alt' => 'Share on Facebook')); ?>
 </a>
 <a class="share-twitter" href="http://twitter.com/home?status=<?php echo $message.$page; ?>" target="_blank">
-	<?php echo $theme->Html->image('twitter-icon.png', array('parent' => false, 'alt' => 'Share on Twitter')); ?>
+	<?php echo $theme->Html->image('icon-twitter.svg', array('parent' => true, 'alt' => 'Share on Twitter')); ?>
 </a>
 <script type="text/javascript">
 	jQuery('.share-facebook, .share-twitter').click(function() {

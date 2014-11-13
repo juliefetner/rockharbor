@@ -17,16 +17,16 @@ the_post();
 				?>
 				<div class="entry-content">
 					<div class="message-details clearfix">
+						<?php
+						echo apply_filters('the_content', $post->post_content);
+						?>
 						<div class="message-meta">
-							<p><span class="meta-title">Tags:</span><span class="meta-value"><?php echo the_tags('', ', '); ?></span></p>
 							<p><span class="meta-title">Series:</span><span class="meta-value"><?php echo get_the_term_list($post->ID, 'series'); ?></span></p>
 							<p><span class="meta-title">Teacher:</span><span class="meta-value"><?php echo get_the_term_list($post->ID, 'teacher', '', ', '); ?></span></p>
 							<p><span class="meta-title">Scripture:</span><span class="meta-value"><?php echo $meta['scripture']; ?></span></p>
 							<p><span class="meta-title">Length:</span><span class="meta-value"><?php echo $meta['length']; ?></span></p>
+							<p><span class="meta-title">Tags:</span><span class="meta-value"><?php echo the_tags('', ', '); ?></span></p>
 						</div>
-						<?php
-						echo apply_filters('the_content', $post->post_content);
-						?>
 					</div>
 					<div class="message-more share">
 						<div class="message-share">

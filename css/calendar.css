@@ -189,7 +189,7 @@ html .fc,
 ------------------------------------------------------------------------*/
 
 .fc-event {
-	font-size: .85em;
+	font-size: 1em;
 	cursor: pointer;
 	}
 
@@ -213,8 +213,8 @@ a.fc-event {
 	border-style: solid;
 	border-width: 0;
 	overflow: hidden;
-	background: #383838;
-	color: #ffffff;
+	background-color: #e5e5e5;
+	color: #000000;
 }
 
 .fc-event-inner:hover {
@@ -227,7 +227,7 @@ a.fc-event {
 	font-style: normal;
 	line-height: 1.4em;
 	display: block;
-	border-left: 3px solid #ff0000;
+	border-left: 3px solid #1C9DC2;;
 }
 
 .fc .ui-resizable-handle { /*** TODO: don't use ui-resizable anymore, change class ***/
@@ -485,5 +485,3 @@ table.fc-border-separate {
 .fc-agenda .ui-resizable-resizing { /* TODO: better selector */
 	_overflow: hidden;
 	}
-
-

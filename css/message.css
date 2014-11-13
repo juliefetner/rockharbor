@@ -74,7 +74,7 @@
     color: #19ACCD;
     font-size: .9em;
     font-weight: 700;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
 
 #content article.first.message-series p {
@@ -97,27 +97,51 @@ article.message .message-audio object {
 
 article.message .message-more,
 article.message .message-related {
-	padding-top: 10px;
+	padding-top: 30px;
+	margin-top: 0px;
 }
 
 article.message .message-more {
-	margin-top: 20px;
-	border-top: 1px dotted #747474;
+	margin-top: 30px;
+	border-top: 1px solid #DEDEDE;
 }
 
+.message-share > a, .message-download a {
+	margin: 0 2px;
+}
 article.message .share h3 {
 	display: inline;
-	margin-right: 5px;
+}
+.message .embedded-audio {
+	position: relative;
+	top: 3px;
+	margin-left: 5px;
+}
+article.message .message-share h3 {
+	margin-left: 0;
 }
 
 article.message .share > div {
-	display: inline;
+	display: inline-block;
 	margin-right: 10px;
+	margin-bottom: 30px;
 	max-height: 20px;
+}
+article.message .share img {
+	height: 15px;
+	margin-left: 5px;
+}
+
+article.message .message-details {
+	max-width: 700px;
 }
 
 article.message .message-details .message-meta .meta-title {
 	margin-right: 5px;
+}
+
+article.message .message-details .message-meta p {
+	margin: 0;
 }
 
 /*= Message content

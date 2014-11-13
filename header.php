@@ -30,10 +30,10 @@ $hasHeader =
 <body <?php body_class(); ?>>
     <div class="main-content">
     <?php echo $theme->render('global_navigation'); ?>
-	<div id="navigation" class="wrapper">
-            
+	<div id="navigation" class="wrapper clearfix">
+
 		<div class="rockharbor-logo">
-            <?php echo $theme->Html->image('logo_1.png', array('alt' => 'RockHarbor', 'parent' => false )); ?>      
+            <?php echo $theme->Html->image('logo_1.png', array('alt' => 'RockHarbor', 'parent' => false )); ?>
         </div>
 
 		<nav id="access" role="navigation" class="clearfix">

@@ -41,7 +41,8 @@ body {
 #footer, .wrapper {
 	max-width: 1200px;
 	width: 90%;
-	display: inline-block;
+	display: block;
+	margin: auto;
 	text-align: left;
 }
 .wrapper, #main {
@@ -854,7 +855,7 @@ aside .widget-body {
 article {
 	padding-bottom: 20px;
 	margin-bottom: 20px;
-	border-bottom: 1px solid #383838;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 article:nth-of-type(odd) img.every-other-float {
@@ -905,8 +906,10 @@ nav.submenu li.current_page_item > a {
 }
 
 footer {
+	display: inline-block;
 	margin-top: 30px;
 	width: 100%;
+	padding-bottom: 30px;
 
 	background: #383838;
 }
@@ -1202,7 +1205,12 @@ footer #mc-embedded-subscribe {
 	font-size: 1.2em;
 	line-height: 1.3em;
 }
-
+.breadcrumbs a {
+	color: #000000;
+}
+.breadcrumbs a:hover {
+	color: #1C9DC2;
+}
 .flash-message {
 	padding: 5px;
 
@@ -1293,7 +1301,7 @@ a.prev {
 	box-sizing: border-box;
 	/*box-shadow: 0px 0px 3px 1px #d5d5d5;*/
 
-	background: #ff0000;
+	/*background: #ff0000;*/
 	background-position: 50% 50%;
 
 	text-decoration: none;
@@ -1305,28 +1313,13 @@ a.prev {
 }
 
 .story-box .title {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	padding: 10px;
-	margin: 10px;
-
-	background: #000;
-	background: rgba(0, 0, 0, .5);
-
-	color: #fff;
 	font-size: 1.4em;
-	text-transform: uppercase;
-
-	/* transitions */
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
+	margin: 10px 0;
+	font-weight: 700;
 }
 
 .story-box:hover .title {
-	background: rgba(0, 0, 0, .8);
+	/*background: rgba(0, 0, 0, .8);*/
 }
 
 .stories-2 .story-box {
@@ -1469,6 +1462,7 @@ time span {
 time .day {
 	border: 1px solid #000000;
     padding: 3px 5px;
+	border-radius: 5px;
 }
 
 h2 time span {
@@ -1478,7 +1472,7 @@ h2 time span {
 article footer {
 	padding-top: 10px;
 
-	border-top: 1px dotted #747474;
+	border-top: 1px solid #DEDEDE;
 
 	background: transparent;
 }

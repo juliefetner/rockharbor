@@ -5,7 +5,7 @@ $related = false;
 $tags = wp_get_post_tags($post->ID);
 
 if (!isset($limit)) {
-	$limit = 6;
+	$limit = 4;
 }
 if (!isset($types)) {
 	$types = array();
@@ -27,7 +27,7 @@ if ($tags) {
 $c = 0;
 
 if ($related): ?>
-<div class="related clearfix stories-3">
+<div class="related clearfix stories-4">
 	<?php
 	foreach ($related as $related_post) {
 		$theme->set('id', $related_post->ID);

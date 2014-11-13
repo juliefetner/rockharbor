@@ -51,6 +51,6 @@ if (!empty($title)) {
 	if ($blog) {
 		$icon = $theme->Html->tag('i', null, array('class' => "blog-$blog"));
 	}
-	$out .= $theme->Html->tag('span', $icon.$title, array('class' => 'title'));
+	$out .= $theme->Html->tag('div', $icon.$title, array('class' => 'title'));
 }
 echo $theme->Html->tag('a', $out, $options);
