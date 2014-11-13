@@ -21,7 +21,7 @@ RH.showVideos = function() {
 
 // initialized on every page
 jQuery(document).ready(function() {
-    
+
     jQuery('#simple-menu').sidr({
         name: 'campus-menu'
     });
@@ -55,8 +55,8 @@ jQuery(document).ready(function() {
     jQuery('.icon-close, .main-content').on('click', function(){
         jQuery.sidr('close', 'campus-menu');
     });
-    
-	
+
+
     // core feeds
 	jQuery('.core-events').each(function() {
 		var self = jQuery(this);
@@ -162,13 +162,6 @@ jQuery(document).ready(function() {
 		});
 	}
 
-	jQuery(window).resize(function() {
-		jQuery('.story-box:not(.fixed-size)').each(function() {
-			var w = $(this).width();
-			var h = w*9/16;
-			$(this).css('height', h);
-		});
-	});
 	jQuery(window).resize();
 
 	// responsive breakpoints
