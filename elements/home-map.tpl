@@ -11,7 +11,7 @@ if ($map){
 ?>
 
 <section id="map" style="background-image: url(<?php echo $map_img; ?>);">
-    <div class="wrapper">
+    <div class="wrapper clearfix" >
         <div class="one-third">
             <?php echo $theme->Html->image('logo_2.png', array('alt' => 'Menu', 'class' => 'map-logo', 'parent' => false )); ?>
         </div>
@@ -32,6 +32,11 @@ if ($map){
                      $theme->options('campus_address_2') . '<br>' .
                      $theme->options('campus_address_3');
             ?>
+            <?php if( $theme->options('campus_googlemaps') ) : ?>
+                <a class="google-directions" href="<?php echo $theme->options('campus_googlemaps'); ?>" target="_blank">
+                    Get Directions &#8594;
+                </a>
+            <?php endif; ?>
         </div>
     </div>
 </section>

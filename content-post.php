@@ -23,7 +23,7 @@ global $theme, $more;
 					echo "<img src=\"$imageUrl\" alt=\"$title\" class=\"every-other-float\" />";
 				}
 			}
-			?>
+			?>			
 			<?php the_content(__('Read More', 'rockharbor')); ?>
 			<?php echo $theme->render('pagination_posts'); ?>
 		</div>

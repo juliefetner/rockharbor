@@ -44,37 +44,47 @@ if (!isset($_REQUEST['settings-updated'])) {
 					));
 				?>
 			</tr>
-            <tr valign="top">
-                <td colspan="2"><h2>Campus Address</h2></td>
-            </tr>
-            <tr valign="top">
-                <?php
-                    echo $theme->Html->input('campus_address_1', array(
-                        'before' => '<th>',
-                        'label' => 'Address Line 1',
-                        'between' => '</th><td>',
-                    ));
-                ?>
-            </tr>
-            <tr valign="top">
-                <?php 
-                    echo $theme->Html->input('campus_address_2', array(
-                        'before' => '<th>',
-                        'label' => 'Address Line 2',
-                        'between' => '</th><td>',
-                    ));
-                ?>
-            </tr>
-            <tr valign="top">
-                <?php 
-                    echo $theme->Html->input('campus_address_3', array(
-                        'before' => '<th>',
-                        'label' => 'Address Line 3',
-                        'between' => '</th><td>',
-                    ));
-                ?>
+      <tr valign="top">
+          <td colspan="2"><h2>Campus Address</h2></td>
+      </tr>
+      <tr valign="top">
+          <?php
+              echo $theme->Html->input('campus_address_1', array(
+                  'before' => '<th>',
+                  'label' => 'Address Line 1',
+                  'between' => '</th><td>',
+              ));
+          ?>
+      </tr>
+      <tr valign="top">
+          <?php
+              echo $theme->Html->input('campus_address_2', array(
+                  'before' => '<th>',
+                  'label' => 'Address Line 2',
+                  'between' => '</th><td>',
+              ));
+          ?>
+      </tr>
+      <tr valign="top">
+          <?php
+              echo $theme->Html->input('campus_address_3', array(
+                  'before' => '<th>',
+                  'label' => 'Address Line 3',
+                  'between' => '</th><td>',
+              ));
+          ?>
 
-            </tr>
+      </tr>
+			<tr valign="top">
+					<?php
+							echo $theme->Html->input('campus_googlemaps', array(
+									'before' => '<th>',
+									'label' => 'Google Maps URL',
+									'between' => '</th><td>',
+							));
+					?>
+
+			</tr>
 			<tr valign="top" class="service-times">
 				<th>Service Times</th>
 				<td>

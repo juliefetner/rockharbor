@@ -151,7 +151,7 @@ blockquote {
 	padding: 10px;
 	margin-bottom: 10px;
 
-	background: #f1f1f1;
+	/*background: #f1f1f1;*/
 
 	text-indent: 0;
 	color: #747474;
@@ -359,8 +359,9 @@ th {
     display: inline-block;
     color: white;
     background-color: #1C9DC2;
-    padding: 10px;
+    padding: 16px;
     border-radius: 4px;
+	line-height: 0;
 }
 .select-campus:hover {
     background-color: #0D6078;
@@ -959,6 +960,9 @@ footer .bottom {
 footer .newsletter {
     max-width: 400px;
 }
+footer .mobile-newsletter {
+	margin-bottom: 25px;
+}
 
 footer .required.email {
     height: 36px;
@@ -1012,6 +1016,11 @@ footer #mc-embedded-subscribe {
 
 #footer .icons a img {
 	vertical-align: middle;
+}
+#footer p.copy {
+	font-size: 1.1em;
+	font-family: Arial, sans-serif;
+	margin-top: 20px;
 }
 
 /*= Home content
@@ -1174,11 +1183,22 @@ footer #mc-embedded-subscribe {
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
     border-right: 2px solid white;
-    min-height: 100px;
+    min-height: 115px;
     padding: 10px;
 }
 #map .one-third.last { border: none; }
 
+a.google-directions, .campus-list a.google-directions {
+	display: block;
+	color: white;
+
+	font-family: Arial, sans-serif;
+	font-style: italic;
+	font-size: .6em;
+	text-transform: none;
+	padding: 0;
+}
+.campus-list a.google-directions { font-size: 1.3em !important; }
 
 #mission {
     text-align: center;
@@ -1290,6 +1310,13 @@ a.prev {
 	display: inline-block;
 }
 
+.archive article, .blog article {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+.archive .entry-content, .blog .entry-content {
+	margin-top: 30px;
+}
 /*= Story box
 -----------------------------------------*/
 .story-box {
@@ -1544,7 +1571,7 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-	border: 1px solid #ff0000;
+	border: none;
 }
 
 input[type=submit] {
@@ -1619,7 +1646,7 @@ input[type="search"]::-webkit-search-cancel-button {
 		margin-top: 2px;
 }
 .socials .social-icon {
-    height: 23px;
+    height: 20px;
 }
 
 /*= CORE
