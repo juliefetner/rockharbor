@@ -8,7 +8,7 @@
                 </p>
         </div>
         <ul class="campus-list campus-chooser">
-            <li style='background-image: url(<?php echo $theme->Html->image('map-costamesa-sm.jpg', array('parent' => true, 'url' => true)); ?>);'>
+            <li style="background-image: url('/wp-content/themes/costamesa/img/map-sm.jpg');">
                 <div class="campus-info">
                     <div class="title">
                         <a href="http://costamesa.rockharbor.org" class="campus-link">Costa Mesa</a>
@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </li>
-            <li style='background-image: url(<?php echo $theme->Html->image('map-mission_viejo-sm.jpg', array('parent' => true, 'url' => true)); ?>);'>
+            <li style="background-image: url('/wp-content/themes/missionviejo/img/map-sm.jpg');">
                 <div class="campus-info">
                     <div class="title">
                         <a href="http://missionviejo.rockharbor.org" class="campus-link">Mission Viejo</a>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </li>
-            <li style='background-image: url(<?php echo $theme->Html->image('map-fullerton-sm.jpg', array('parent' => true, 'url' => true)); ?>);'>
+            <li style="background-image: url('/wp-content/themes/fullerton2/img/map-sm.jpg');">
                 <div class="campus-info">
                     <div class="title">
                         <a href="http://fullerton.rockharbor.org" class="campus-link">Fullerton</a>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
             </li>
-            <li style='background-image: url(<?php echo $theme->Html->image('map-huntington_beach-sm.jpg', array('parent' => true, 'url' => true)); ?>);'>
+            <li style="background-image: url('/wp-content/themes/huntingtonbeach/img/map-sm.jpg');">
                 <div class="campus-info">
                     <div class="title">
                         <a href="http://huntingtonbeach.rockharbor.org" class="campus-link">Huntington Beach</a>
@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </li>
-            <li style='background-image: url(<?php echo $theme->Html->image('map-orange-sm.jpg', array('parent' => true, 'url' => true)); ?>);'>
+            <li style="background-image: url('/wp-content/themes/orange/img/map-sm.jpg');">
                 <div class="campus-info">
                     <div class="title">
                         <a href="http://orange.rockharbor.org" class="campus-link">Orange</a>
