@@ -106,9 +106,29 @@ article.message .message-more {
 	border-top: 1px solid #DEDEDE;
 }
 
-.message-share > a, .message-download a {
-	margin: 0 2px;
+.message-more a {
+	font-size: 2.4em;
+	margin: 0 5px;
+	color: #AFAFAF;
 }
+
+.message-more a:hover {
+	color: #888888;
+}
+
+.message-more a .icon {
+	position: relative;
+	top: 5px;
+}
+.message-more a .icon-facebook {
+	font-size: .9em;
+	top: 3px;
+}
+.message-more a .icon-download-video {
+	font-size: 1.2em;
+	top: 7px;
+}
+
 article.message .share h3 {
 	display: inline;
 }
@@ -131,7 +151,9 @@ article.message .share img {
 	height: 15px;
 	margin-left: 5px;
 }
-
+.message-download h3 {
+	margin-right: 5px;
+}
 article.message .message-details {
 	max-width: 700px;
 }

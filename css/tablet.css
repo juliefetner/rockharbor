@@ -1,13 +1,8 @@
-@media screen and (max-width: 1125px) {
-    nav#access {
-        margin-bottom: 0;
-    }
-    .rockharbor-logo {
-        margin-bottom: 0;   
-    }
-}
-
 @media screen and (max-width: 1025px) {
+
+
+
+
 
 /*= Generic styles
 -----------------------------------------*/
@@ -27,11 +22,10 @@
     float: left;
     margin-bottom: 20px;
 }
+
 .one-fourth:nth-child(2n) {
     margin-right: 0;
 }
-
-
 
 /*= Main layout
 -----------------------------------------*/
@@ -203,6 +197,7 @@ nav.submenu a {
 	color: #383838;
 }
 
+
 /*= Global navigation
 -----------------------------------------*/
 .global-navigation {
@@ -213,12 +208,149 @@ nav.submenu a {
 .wrapper {
     padding: 0;
 }
+/*= Global navigation
+-----------------------------------------*/
+.global-navigation {
+	height: 51px;
+}
+
+.global-navigation nav ul li {
+	position: static;
+}
+
+.global-navigation nav ul li:hover ul {
+	display: none;
+}
+
+.global-navigation nav ul li ul.touch {
+	display: block;
+}
+
+.global-navigation li.menu,
+.global-navigation li.campuses,
+.global-navigation li.search {
+	display: block;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 10px;
+	margin-top: 10.5px; /*= global nav height / 2 - this.outerHeight/2 + 10px margin */
+	cursor: pointer;
+	color: #C0C0C0;
+	-o-transition:.2s;
+	-ms-transition:.2s;
+	-moz-transition:.2s;
+	-webkit-transition:.2s;
+	transition:.2s;
+
+	background-repeat: no-repeat;
+}
+.global-navigation li.menu:hover,
+.icon-search:hover {
+	color: #B4B4B4;
+}
+.global-navigation li.menu {
+	font-size: 2.7em;
+}
+.global-navigation .search-label {
+	margin: 0;
+}
+.global-navigation .search-label img {
+	width: 30px;
+	margin-top: 1px;
+}
+
+.global-navigation li.campuses > a {
+	text-indent: -9999px;
+}
+
+.global-navigation li.campuses > a:after {
+	display: none;
+}
+
+.global-navigation li.menu {
+	background-position: -19px -60px;
+}
+
+.global-navigation li.campuses {
+	background-position: -19px -30px;
+}
+
+.global-navigation li.search {
+	background-image: none;
+}
+
+.global-navigation #searchform {
+	position: absolute;
+	top: 100%;
+	width: 300px;
+}
+.global-navigation .icon-search {
+	font-size: 2.5em;
+}
+
+.global-navigation nav ul li ul,
+.global-navigation #searchform {
+	display: none;
+	top: 51px;
+	right: 0;
+	left: auto;
+	z-index: 102;
+
+	background: #ffffff;
+}
+
+.global-navigation #searchform.touch {
+	display: block;
+}
+
+.global-navigation #searchform {
+	width: 100%;
+	padding: 2%;
+
+	background: #f2f2f2;
+
+
+}
+
+.global-navigation #searchform input {
+	font-size: 1.5em;
+	padding: 5px;
+}
+
+.global-navigation .campus-menu {
+	margin-top: 4px;
+}
 
 
 /*= Main navigation
 -----------------------------------------*/
+.rockharbor-logo {
+	float: none;
+	margin: 20px 0;
+	max-width: 100%;
+}
+
 #access {
-	/*margin-top: 0;*/
+	display: none;
+	float: none;
+}
+
+#access ul {
+	float: none;
+}
+
+#access ul li {
+	float: none;
+}
+
+#access ul li a {
+	padding: 5px 15px 4px !important;
+	text-align: left;
+}
+
+nav.submenu ul {
+	min-width: 45%;
 }
 
 #access ul li:hover div.submenu {
@@ -227,10 +359,6 @@ nav.submenu a {
 
 #access>ul>li:hover:after {
 	display: none;
-}
-
-#access ul li a {
-	padding: 5px 15px 4px;
 }
 
 /*= Footer

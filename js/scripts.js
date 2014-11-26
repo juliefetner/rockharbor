@@ -27,6 +27,7 @@ jQuery(document).ready(function() {
     });
 
     jQuery('.frontpage-banner').slick({dots: true});
+    jQuery('.global-maps').slick({dots: true});
 
     jQuery('.faq-slides').slick({
         infinite: true,
@@ -55,6 +56,11 @@ jQuery(document).ready(function() {
     jQuery('.icon-close, .main-content').on('click', function(){
         jQuery.sidr('close', 'campus-menu');
     });
+
+	// Add 'has_children' class to menus
+	jQuery.each(jQuery('.menu-item').has('.submenu'), function() {
+		jQuery(this).addClass('has_children');
+	});
 
 
     // core feeds

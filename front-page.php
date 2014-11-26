@@ -22,7 +22,6 @@ get_header();
 
     </div></div> <!-- #main & #page -->
 
-
     <?php echo $theme->render('home-map'); ?>
 
 

@@ -29,7 +29,7 @@
 		echo " | $site_description";
 	}
 	?></title>
-<link rel="icon" href="<?php echo $theme->info('url'); ?>/img/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="<?php echo $theme->Html->image('favicon.ico', array( 'parent' => true, 'url' => true )); ?>" type="image/x-icon" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo $theme->info('url'); ?>/img/appicon-144.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo $theme->info('url'); ?>/img/appicon-114.png" />
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo $theme->info('url'); ?>/img/appicon-144.png" />

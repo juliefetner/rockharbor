@@ -84,12 +84,6 @@ $hasHeader =
 		</nav>
     </div>
     <div id="page" class="hfeed clearfix">
-		<?php
-		if (!$theme->Shortcodes->hasShortcode('children-grid')) {
-			// touch-accessible submenu
-			get_sidebar();
-		}
-		?>
 
 		<?php if ($hasHeader): ?>
 		<header id="branding" role="banner" class="clearfix">
@@ -128,5 +122,10 @@ $hasHeader =
 		?>
 
 		<?php echo $theme->render('breadcrumbs'); ?>
-
+		<?php
+		if (!$theme->Shortcodes->hasShortcode('children-grid')) {
+			// touch-accessible submenu
+			get_sidebar();
+		}
+		?>
 		<div id="main" class="clearfix">

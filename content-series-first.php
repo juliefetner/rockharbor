@@ -41,7 +41,7 @@ $termlink = get_term_link((int)$item->term_id, 'series');
 				</p>
 				<p class="series-link-buttons">
 					<?php
-					echo $theme->Html->tag('a', 'Watch This Message', array(
+					echo $theme->Html->tag('a', '<span class="icon icon-download"></span>Watch This Message', array(
 						'href' => $permalink,
 						'title' => $item->last->post_title,
                         'class' => 'rh-button'

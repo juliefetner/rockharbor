@@ -23,8 +23,13 @@ global $theme, $more;
 					echo "<img src=\"$imageUrl\" alt=\"$title\" class=\"every-other-float\" />";
 				}
 			}
-			?>			
-			<?php the_content(__('Read More', 'rockharbor')); ?>
+			?>
+			<?php if ( is_category() || is_archive() || is_home() ) {
+				the_excerpt();
+			} else {
+				the_content(__('Read More', 'rockharbor'));
+			} ?>
+
 			<?php echo $theme->render('pagination_posts'); ?>
 		</div>
 
@@ -64,7 +69,7 @@ global $theme, $more;
 				$comments = trim(preg_replace('/\s+/', ' ', $comments));
 			}
 			if (!empty($related) || !empty($comments)) {
-				echo $theme->Html->tag('footer', $related.$comments, array('class' => 'related clearfix'));
+				echo $theme->Html->tag('div', $related.$comments, array('class' => 'related clearfix'));
 			}
 		}
 		?>

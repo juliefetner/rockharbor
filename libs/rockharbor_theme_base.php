@@ -191,6 +191,8 @@ class RockharborThemeBase {
 		add_filter('pre_get_posts', array($this, 'aggregateArchives'));
 		add_filter('wp_get_attachment_url', array($this, 's3Url'));
 		add_action('get_header', array($this, 'sendHeaders'), 10, 1);
+		add_filter( 'excerpt_length', array($this, 'custom_excerpt_length'), 999 );
+		add_filter( 'excerpt_more', array($this, 'new_excerpt_more'), 999 );
 	}
 
 /**
@@ -201,6 +203,7 @@ class RockharborThemeBase {
 		$this->Shortcodes = new Shortcodes($this);
 		$this->Twitter = new Twitter($this);
 	}
+
 
 /**
  * Filter content before outputting it
@@ -229,6 +232,24 @@ class RockharborThemeBase {
 			$content = $contentBefore.'<div class="columns clearfix">'.$columnDiv.$content.'</div></div>'.$contentAfter;
 		}
 		return $content;
+	}
+
+/**
+* Set the Excerpt Length
+*
+* @param string $length Length
+*/
+	public function custom_excerpt_length( $length ) {
+		return 150;
+	}
+
+/**
+* Set the Excerpt Length
+*
+* @param string $more More
+*/
+	public function new_excerpt_more( $more ) {
+		return '...<a class="moretag" href="'. get_permalink() . '">Continue Reading &rarr;</a>';
 	}
 
 /**
@@ -498,6 +519,7 @@ class RockharborThemeBase {
 		load_template(TEMPLATEPATH . DS . 'rss.php');
 		die(/*in a fire*/);
 	}
+
 
 /**
  * Handles oauth flow
@@ -1228,13 +1250,14 @@ class RockharborThemeBase {
 		return header($header);
 	}
 
+
 /**
  * Sets the HTTP protocol and status header
  *
  * @param mixed $status String or integer HTTP status code
  * @return void
  */
-	protected function _status($status = '404') {
+	public function _status($status = '404') {
 		return status_header((int)$status);
 	}
 }

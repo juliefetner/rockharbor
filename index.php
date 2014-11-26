@@ -2,6 +2,7 @@
 get_header();
 $meta = $theme->metaToData(get_queried_object_id());
 $fullpage = !empty($meta['hide_widgets']) && !empty($meta['hide_submenu']);
+$sidebar = empty($meta['hide_widgets']) || empty($meta['hide_submenu']);
 ?>
 		<header id="content-title">
 			<h1><?php wp_title(false); ?></h1>
@@ -35,7 +36,7 @@ $fullpage = !empty($meta['hide_widgets']) && !empty($meta['hide_submenu']);
 
 		</section>
 
-		<?php if (empty($meta['hide_widgets']) || empty($meta['hide_submenu'])): ?>
+		<?php if ( $sidebar ): ?>
 		<section id="sidebar" role="complementary" class="clearfix">
 			<?php
 			if (empty($meta['hide_submenu'])) {

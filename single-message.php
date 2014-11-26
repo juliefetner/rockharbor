@@ -41,21 +41,13 @@ the_post();
 							<?php
 							$downloader = $theme->info('base_url').'/download.php?';
 							if (!empty($meta['video_url'])) {
-								$icon = $theme->Html->image('video.png', array(
-									'alt' => 'Video',
-									'parent' => true
-								));
-								echo $theme->Html->tag('a', $icon, array(
+								echo $theme->Html->tag('a', '<span class="icon icon-download-video"></span>', array(
 									'href' => $downloader.'file='.urlencode($meta['video_url']).'&filename='.urlencode(get_the_title()),
 									'title' => 'Download Video'
 								));
 							}
 							if (!empty($meta['audio_url'])) {
-								$icon = $theme->Html->image('audio.png', array(
-									'alt' => 'Audio',
-									'parent' => true
-								));
-								echo $theme->Html->tag('a', $icon, array(
+								echo $theme->Html->tag('a', '<span class="icon icon-download-1"></span>', array(
 									'href' => $downloader.'file='.urlencode($meta['audio_url']).'&filename='.urlencode(get_the_title()),
 									'title' => 'Download Audio'
 								));

@@ -5,22 +5,22 @@
     top: 0;
     height: 100%;
     z-index: 999999;
-    width: 260px;
+    width: 312px;
     overflow-x: none;
     overflow-y: auto;
     background: #0D6078;
-    color: #fff;    
+    color: #fff;
     text-align: left;
 }
 
 
 .sidr.right {
     left: auto;
-    right: -260px;
+    right: -312px;
 }
 
 .sidr.left {
-    left: -260px;
+    left: -312px;
     right: auto;
 }
 
@@ -30,26 +30,40 @@
 }
 .sidr h2 {
     font-size: 2em;
-    margin: auto 15px;
+    margin: auto 0;
     border-bottom: 1px solid #fff;
     padding-bottom: 20px;
 }
+
+.sidr nav {
+    position: relative;
+    margin-top: 30px;
+    padding: 0 60px 0 36px;
+}
+
 .sidr .campus-logo {
-    margin: 20px 15px 50px 15px;
+    margin: 0;
+    margin-bottom: 50px;
 }
 .sidr .icon-close {
-    float: right;
-    margin: 20px;
+    position: absolute;
+    top: 30px;
+    right: 55px;
     cursor: pointer;
+    font-size: 2.2em;
+    z-index: 10000;
 }
 
 .sidr ul {
-    margin-top: 10px;
+    margin-top: 0;
 }
 
+.sidr ul li {
+    margin: 0 -60px 0 -36px;
+}
 .sidr ul li a {
     font-size: 1.8em;
-    padding: 15px;
+    padding: 21px 36px;
     display: block;
 }
 .sidr ul li.active, .sidr ul li:hover {
@@ -58,4 +72,16 @@
 .sidr a {
     color: #fff;
     text-decoration: none;
+}
+
+.sidr .sidebar-footer {
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+.sidr .sidebar-footer p {
+    font-family: Georgia, serif;
+    margin-bottom: 5px;
+}
+.sidr .sidebar-footer h3 {
+    font-size: 1.5em;
 }
