@@ -1054,6 +1054,7 @@ footer #mc-embedded-subscribe {
     border: none;
     text-align: center;
     cursor: pointer;
+    -webkit-appearance: none;
 }
 footer #mc-embedded-subscribe:hover {
 	background-color: #0D6078;
