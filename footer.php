@@ -89,12 +89,14 @@ $address3 = $theme->options('campus_address_3');
             <li class="<?php if ($theme->info()['slug'] === 'missionviejo') echo 'active'; ?>"><a href="//missionviejo.tentsociety.com">Mission Viejo</a></li>
             <li class="<?php if ($theme->info()['slug'] === 'huntingtonbeach') echo 'active'; ?>"><a href="//huntingtonbeach.tentsociety.com">Huntington Beach</a></li>
         </ul>
-        <div class="sidebar-footer">
-            <a href="//www.rockharbor.org">
-                <p>&larr; <em>Back To</em> </p>
-                <h3>ROCKHARBOR.ORG</h3>
-            </a>
-        </div>
+        <?php if( $theme->info('name') !== "" ) : ?>
+            <div class="sidebar-footer">
+                <a href="//www.rockharbor.org">
+                    <p>&larr; <em>Back To</em> </p>
+                    <h3>ROCKHARBOR.ORG</h3>
+                </a>
+            </div>
+        <?php endif; ?>
     </nav>
 
 </div>
