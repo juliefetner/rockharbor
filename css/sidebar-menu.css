@@ -38,7 +38,7 @@
 .sidr nav {
     position: relative;
     margin-top: 30px;
-    padding: 0 60px 0 36px;
+    padding: 0 36px;
 }
 
 .sidr .campus-logo {
@@ -48,7 +48,7 @@
 .sidr .icon-close {
     position: absolute;
     top: 30px;
-    right: 55px;
+    right: 36px;
     cursor: pointer;
     font-size: 2.2em;
     z-index: 10000;
@@ -66,7 +66,7 @@
     padding: 21px 36px;
     display: block;
 }
-.sidr ul li.active, .sidr ul li:hover {
+.sidr ul li.active, .sidr ul li:hover, .sidr .sidebar-footer a:hover {
     background-color: #1C9DC2;
 }
 .sidr a {
@@ -77,6 +77,11 @@
 .sidr .sidebar-footer {
     border-top: 1px solid #fff;
     padding-top: 20px;
+}
+.sidr .sidebar-footer a {
+    padding: 10px 36px;
+    margin: 0 -36px;
+    display: block;
 }
 .sidr .sidebar-footer p {
     font-family: Georgia, serif;
