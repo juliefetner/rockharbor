@@ -93,10 +93,10 @@ $hasHeader =
 					echo '<div class="frontpage-banner">';
                     if ( have_rows( 'slide_banners') ) :
                         while ( have_rows('slide_banners') ) : the_row();
-                            echo '<div>';
+                            $image_link = get_sub_field('link_url');
                             $image = get_sub_field('slide_image');
-                            echo wp_get_attachment_image( $image, 'full' );
-                            echo '</div>';
+                            $output = $theme->Html->tag('a', wp_get_attachment_image( $image, 'full'), array('href' => $image_link));
+                            echo '<div>' . $output . '</div>';
                         endwhile;
                     endif;
                     echo '</div>';
