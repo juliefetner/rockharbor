@@ -9,6 +9,7 @@ $ebulletinpage = $theme->options('ebulletin_archive_page_id');
 $address1 = $theme->options('campus_address_1');
 $address2 = $theme->options('campus_address_2');
 $address3 = $theme->options('campus_address_3');
+$themeInfo = $theme->info();
 
     //  Front Page closes #main and #page earlier for full width sections
     if (! is_front_page() ) echo "</div></div>";
@@ -83,11 +84,11 @@ $address3 = $theme->options('campus_address_3');
         <?php echo $theme->Html->image('campus-logo.png', array('alt' => 'RockHarbor', 'class' => 'campus-logo', 'parent' => true )); ?>
         <h2>Select Campus</h2>
         <ul>
-            <li class="<?php if ($theme->info()['slug'] === 'costamesa') echo 'active'; ?>"><a href="//costamesa.tentsociety.com">Costa Mesa</a></li>
-            <li class="<?php if ($theme->info()['slug'] === 'fullerton') echo 'active'; ?>"><a href="//fullerton.tentsociety.com">Fullerton</a></li>
-            <li class="<?php if ($theme->info()['slug'] === 'orange') echo 'active'; ?>"><a href="//orange.tentsociety.com">Orange</a></li>
-            <li class="<?php if ($theme->info()['slug'] === 'missionviejo') echo 'active'; ?>"><a href="//missionviejo.tentsociety.com">Mission Viejo</a></li>
-            <li class="<?php if ($theme->info()['slug'] === 'huntingtonbeach') echo 'active'; ?>"><a href="//huntingtonbeach.tentsociety.com">Huntington Beach</a></li>
+            <li class="<?php if ($themeInfo['slug'] === 'costamesa') echo 'active'; ?>"><a href="//costamesa.rockharbor.org">Costa Mesa</a></li>
+            <li class="<?php if ($themeInfo['slug'] === 'fullerton') echo 'active'; ?>"><a href="//fullerton.rockharbor.org">Fullerton</a></li>
+            <li class="<?php if ($themeInfo['slug'] === 'orange') echo 'active'; ?>"><a href="//orange.rockharbor.org">Orange</a></li>
+            <li class="<?php if ($themeInfo['slug'] === 'missionviejo') echo 'active'; ?>"><a href="//missionviejo.rockharbor.org">Mission Viejo</a></li>
+            <li class="<?php if ($themeInfo['slug'] === 'huntingtonbeach') echo 'active'; ?>"><a href="//huntingtonbeach.rockharbor.org">Huntington Beach</a></li>
         </ul>
         <?php if( $theme->info('name') !== "" ) : ?>
             <div class="sidebar-footer">
