@@ -7,7 +7,7 @@
                         <div class="icon icon-sermon"></div>
                         <h2><?php the_field('sermon_series_title'); ?></h2>
                         <div class="subtitle">
-                            <?php the_field('sermon_series_title'); ?>
+                            <?php the_field('sermon_series_subtitle'); ?>
                         </div>
                     </div>
                     <?php
