@@ -6,11 +6,7 @@ $instauser = $theme->options('instagram_user');
 $coreid = $theme->options('core_id');
 $feedburnerid = $theme->options('feedburner_main');
 $ebulletinpage = $theme->options('ebulletin_archive_page_id');
-$address1 = $theme->options('campus_address_1');
-$address2 = $theme->options('campus_address_2');
-$address3 = $theme->options('campus_address_3');
 $themeInfo = $theme->info();
-
     //  Front Page closes #main and #page earlier for full width sections
     if (! is_front_page() ) echo "</div></div>";
 ?>
@@ -26,9 +22,9 @@ $themeInfo = $theme->info();
                 <p class="footer-address">
                 <?php switch_to_blog(1);
 
-                    echo $address1 . '<br>';
-                    echo $address2 . '<br>';
-                    echo $address3;
+                    echo $theme->options('campus_address_1') . '<br>';
+                    echo $theme->options('campus_address_2') . '<br>';
+                    echo $theme->options('campus_address_3');
 
                 restore_current_blog();
                 ?>
