@@ -52,14 +52,10 @@ $themeInfo = $theme->info();
                 </ul>
             </div>
             <div class="one-fourth">
-                <h3>Online Giving</h3>
-                <ul>
-                    <li><a target="_blank" href="https://core.rockharbor.org/campuses/view/Campus:<?php echo $coreid; ?>">Login to Core</a></li>
-
-                </ul>
+                <?php wp_nav_menu(array('theme_location' => 'footer', 'fallback_cb' => create_function('', 'return;'))); ?>
             </div>
             <div class="one-fourth last">
-                <?php wp_nav_menu(array('theme_location' => 'footer', 'fallback_cb' => create_function('', 'return;'))); ?>
+                <?php wp_nav_menu(array('theme_location' => 'footer2', 'fallback_cb' => create_function('', 'return;'))); ?>
             </div>
         </div>
         <div class="bottom">

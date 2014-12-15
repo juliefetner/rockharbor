@@ -700,6 +700,7 @@ class RockharborThemeBase {
 			'main' => __('Main Navigation', 'rockharbor'),
 			'featured' => __('Featured Stories', 'rockharbor'),
 			'footer' => __('Footer Navigation', 'rockharbor'),
+			'footer2' => __('Footer Column 2', 'rockharbor'),
 		));
 	}
 
